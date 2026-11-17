@@ -1,14 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
+    background: #fff8e9;
+    color: #344b4a;
+}
+
+/* HEADER */
+
+.hero {
+    background: linear-gradient(
+        110deg,
+        #20b78d,
+        #63c99b,
+        #f4a62a
+    );
+
+    color: white;
+    text-align: center;
+    padding: 90px 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    letter-spacing: 4px;
+    margin-bottom: 25px;
+}
+
+.hero p {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+/* NAVIGATION BAR */
+
+.district-nav {
+    background: #176b65;
+    width: 90%;
+    margin: 30px auto;
+    padding: 25px 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 18px;
+
+    border-radius: 20px;
+    position: sticky;
+    top: 10px;
+    z-index: 100;
+    overflow: visible;
+}
+
+/* NAVIGATION BUTTONS */
+
+.nav-button {
+    background: #fff8e9;
+    color: #527b76;
+    border: none;
+    padding: 18px 25px;
+    border-radius: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    position: relative;
+}
+
+.nav-button:hover {
+    background: #f4a62a;
+    color: white;
+    transform: translateY(4px);
+}
+
+/* GENERAL DISTRICT BUTTON */
+.district-button {
+    position: relative;
+    overflow: visible;
+    transition: 0.3s ease;
+}
+
+/* HOVER IMAGE BOX */
+.district-button::after {
+    content: "";
+    position: absolute;
+
+    width: 200px;
+    height: 135px;
+
+    left: 50%;
+    bottom: calc(100% + 15px);
+
+    transform: translateX(-50%) translateY(15px);
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border: 4px solid white;
+    border-radius: 15px;
+
+    box-shadow: 0 8px 20px
+        color-mix(in srgb, black 30%, transparent);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: 0.3s ease;
+    pointer-events: none;
+    z-index: 999;
+}
+
+/* LA PAZ IMAGE */
+.district-button:nth-of-type(2)::after {
+    background-image: url("images/la-paz.jpg");
+}
+
+/* JARO IMAGE */
+.district-button:nth-of-type(3)::after {
+    background-image: url("images/jaro.jpg");
+}
+
+/* MOLO IMAGE */
+.district-button:nth-of-type(4)::after {
+    background-image: url("images/molo.jpg");
+}
+
+/* AREVALO IMAGE */
+.district-button:nth-of-type(5)::after {
+    background-image: url("images/arevalo.jpg");
+}
+
+/* MANDURRIAO IMAGE */
+.district-button:nth-of-type(6)::after {
+    background-image: url("images/mandurriao.jpg");
+}
+
+/* CITY PROPER IMAGE */
+.district-button:nth-of-type(7)::after {
+    background-image: url("images/city-proper.jpg");
+}
+
+/* LAPUZ IMAGE */
+.district-button:nth-of-type(8)::after {
+    background-image: url("images/lapuz.jpg");
+}
+
+/* SHOW IMAGE ON HOVER */
+.district-button:hover::after {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+}
+
+/* BUTTON HOVER COLOR */
+.district-button:hover {
+    background: #f4a62a;
+    color: white;
+    transform: translateY(4px);
+}
+
+/* MAIN CONTENT */
+
+#content {
+    background: white;
+    width: 85%;
+    min-height: 400px;
+    margin: 40px auto;
+    padding: 35px;
+
+    border-top: 7px solid #e99b54;
+    border-radius: 20px;
+
+    box-shadow: 0 5px 20px
+        color-mix(in srgb, #176b65 12%, transparent);
+}
+
+#content h2 {
+    color: #397c78;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+#content h3 {
+    color: #d98538;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+#content p {
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #f1d69d;
+    margin: 20px 0;
+}
+
+/* FOOD DETAILS */
+
+.food-card {
+    background: #fff8e9;
     padding: 20px;
+    border-radius: 15px;
+    margin-top: 20px;
+    border-left: 5px solid #f4a62a;
 }
 
-h1 {
-    color: brown;
-    text-align: center;
+/* MAP BUTTON */
+
+.map-button {
+    display: inline-block;
+    background: #176b65;
+    color: white;
+    text-decoration: none;
+    padding: 13px 22px;
+    border-radius: 10px;
+    margin-top: 15px;
+    transition: 0.3s;
 }
 
-h2 {
+.map-button:hover {
+    background: #e99b36;
+}
+
+/* FOOTER */
+
+footer {
+    background: #176b65;
+    color: white;
     text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+/* MOBILE VIEW */
+
+@media (max-width: 600px) {
+    .hero {
+        padding: 65px 15px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .district-nav {
+        width: 94%;
+        gap: 12px;
+    }
+
+    .nav-button {
+        padding: 13px 16px;
+        font-size: 13px;
+    }
+
+    .district-button::after {
+        width: 145px;
+        height: 100px;
+    }
+
+    #content {
+        width: 92%;
+        padding: 22px;
+    }
 }

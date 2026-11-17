@@ -1,20 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ILoLicious</title>
+
+    <title>ILOlicious</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <h1>Welcome to ILoLicious</h1>
-    <h2>ILoLicious-ly Taste Iloilo: One district at a time –
-        <br>A digital food guide that promotes Iloilo City's culinary heritage by 
-        <br>showcasing traditional delicacies and food destinations
-        <br>across its seven districts.</h2>
+    <header class="hero">
+    
+    <div class="logo-container">
+      <div class="logo-icon">
+        <img src="logo.png" alt="ILOlicious Logo">
+      </div>
+
+    <div class="logo-text">
+         <h1>
+            <span class="red">ILO</span>
+            <span class="yellow">li</span>
+            <span class="green">cious</span>
+         </h1>
+
+        <p>
+            Welcome to ILOlicious, where you will find
+            different and unique cuisines in seven districts.
+        </p>
+    </div>
+
+    </div>
+
+    </header>
+
+    <nav class="district-nav">
+
+        <button class="nav-button home-button"
+            type="button" onclick="showHome()">
+            Home
+        </button>
+
+        <button class="nav-button district-button"
+            type="button" onclick="showDistrict(0)">
+            La Paz
+        </button>
+
+        <button class="nav-button district-button"
+            type="button" onclick="showDistrict(1)">
+            Jaro
+        </button>
+
+        <button class="nav-button district-button"
+            type="button" onclick="showDistrict(2)">
+            Molo
+        </button>
+
+        <button class="nav-button district-button"
+            type="button" onclick="showDistrict(3)">
+            Arevalo (Villa)
+        </button>
+
+        <button class="nav-button district-button"
+            type="button" onclick="showDistrict(4)">
+            Mandurriao
+        </button>
+
+        <button class="nav-button district-button"
+            type="button" onclick="showDistrict(5)">
+            City Proper
+        </button>
+
+        <button class="nav-button district-button"
+            type="button" onclick="showDistrict(6)">
+            Lapuz
+        </button>
+
+    </nav>
+
+
+    <main id="content"></main>
+
+
+    <footer>
+        <p>© 2026 ILOlicious | Discover the Taste of Iloilo</p>
+    </footer>
+
 
     <script src="script.js"></script>
+
 </body>
 </html>
