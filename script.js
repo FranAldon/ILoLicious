@@ -59,7 +59,7 @@ function showHome() {
             <hr>
 
             <p>
-                Welcome to ILOlicious!
+                Welcome to ILoLicious!
                 Explore the seven districts of Iloilo City
                 and learn about their unique cuisines,
                 traditions, and local specialties.
