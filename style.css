@@ -13,11 +13,11 @@ body {
 /* HEADER */
 
 .hero {
-    background: linear-gradient(
-        110deg,
-        #20b78d,
-        #63c99b,
-        #f4a62a
+    background-image: url("images/CalleReal.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     );
 
     color: white;
