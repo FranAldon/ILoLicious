@@ -29,10 +29,10 @@ body {
 }
 
 .hero p {
-    font-size: 30px;
+    font-size: 40px;
     font-weight: bold;
     line-height: 1.5;
-    text-shadow: 2px 2px 5px black;
+    text-shadow: 15px 15px 20px black;
 }
 
 /* NAVIGATION BAR */
@@ -116,37 +116,37 @@ body {
 
 /* LA PAZ IMAGE */
 .district-button:nth-of-type(2)::after {
-    background-image: url("images/ButtPic/La-Paz.jpg");
+    background-image: url("images/BackgroundPic/LapazPerm.jpg");
 }
 
 /* JARO IMAGE */
 .district-button:nth-of-type(3)::after {
-    background-image: url("images/jaro.jpg");
+    background-image: url("images/BackgroundPic/JaroPerm.jpg");
 }
 
 /* MOLO IMAGE */
 .district-button:nth-of-type(4)::after {
-    background-image: url("images/molo.jpg");
+    background-image: url("images/BackgroundPic/MoloPerm.jpeg");
 }
 
 /* AREVALO IMAGE */
 .district-button:nth-of-type(5)::after {
-    background-image: url("images/arevalo.jpg");
+    background-image: url("images/BackgroundPic/ArevaloPerm.jpg");
 }
 
 /* MANDURRIAO IMAGE */
 .district-button:nth-of-type(6)::after {
-    background-image: url("images/mandurriao.jpg");
+    background-image: url("images/BackgroundPic/MandurriaoPerm.jpg");
 }
 
 /* CITY PROPER IMAGE */
 .district-button:nth-of-type(7)::after {
-    background-image: url("images/city-proper.jpg");
+    background-image: url("images/BackgroundPic/CityProperPerm.jpg");
 }
 
 /* LAPUZ IMAGE */
 .district-button:nth-of-type(8)::after {
-    background-image: url("images/lapuz.jpg");
+    background-image: url("images/BackgroundPic/LapuzPerm.jpg");
 }
 
 /* SHOW IMAGE ON HOVER */
