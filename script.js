@@ -55,7 +55,7 @@ const districts = [
 function showHome() {
     document.getElementById("content").innerHTML = `
         <section>
-            <h2>Welcome to Iloilo!</h2>
+            <h2 style="text-align: center;">Welcome to Iloilo!</h2>
 
             <hr>
 
@@ -65,7 +65,23 @@ function showHome() {
                 and learn about their unique cuisines,
                 traditions, and local specialties.
             </p>
-            
+
+            <hr>
+
+            <h2 style="text-align: center;">About</h2>
+
+            <p>
+                ILoLicious is your guide to discovering the unique flavors,
+                traditions, and local specialties across the seven districts
+                of Iloilo City. From the famous La Paz Batchoy to the historic
+                streets of Molo, we celebrate the rich food culture and heritage
+                that make each district special.
+            </p>
+
+            <p>
+                Explore each district to find embedded maps, photo galleries,
+                and signature dishes waiting to be discovered.
+            </p>
         </section>
     `;
 
@@ -126,14 +142,6 @@ function showDistrict(index) {
                     aria-label="Google Map of ${district.name}">
                 </iframe>
             </div>
-
-            <a
-                class="map-button"
-                href="${district.mapUrl || `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(district.name + ', Iloilo City, Philippines')}`}"
-                target="_blank"
-                rel="noopener noreferrer">
-                View on Google Maps
-            </a>
 
             <!-- Photo Gallery: 7 placeholders -->
             <h3>Photo Gallery</h3>
