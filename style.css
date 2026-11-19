@@ -25,14 +25,8 @@ body {
     padding: 90px 20px;
 }
 
-.hero h1 {
-    font-size: 60px;
-    letter-spacing: 4px;
-    margin-bottom: 25px;
-}
-
 .hero p {
-    font-size: 20px;
+    font-size: 60px;
     font-weight: bold;
     line-height: 1.5;
 }
