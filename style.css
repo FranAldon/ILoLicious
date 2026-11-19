@@ -230,6 +230,82 @@ hr {
     background: #e99b36;
 }
 
+/* EMBEDDED GOOGLE MAP */
+
+.map-container {
+    margin: 30px 0;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px color-mix(in srgb, #176b65 20%, transparent);
+}
+
+/* PHOTO GALLERY - 7 PLACEHOLDERS STACKED VERTICALLY */
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.gallery-item {
+    background: #fff8e9;
+    border-radius: 15px;
+    padding: 20px;
+    width: 100%;
+    max-width: 100%;
+    border: 2px dashed #f1d69d;
+    transition: 0.3s;
+    box-sizing: border-box;
+}
+
+.gallery-item:hover {
+    border-color: #f4a62a;
+}
+
+.placeholder-img {
+    width: 100%;
+    height: 200px;
+    background: #e9e9e9;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #888;
+    font-size: 16px;
+    margin-bottom: 12px;
+    border: 2px dashed #ccc;
+}
+
+.placeholder-desc {
+    font-size: 16px;
+    color: #666;
+    margin: 0;
+    line-height: 1.5;
+    text-align: center;
+}
+
+/* MOBILE VIEW - GALLERY ADJUSTMENTS */
+
+@media (max-width: 600px) {
+    .gallery {
+        gap: 15px;
+    }
+
+    .gallery-item {
+        padding: 15px;
+    }
+
+    .placeholder-img {
+        height: 140px;
+        font-size: 14px;
+    }
+
+    .placeholder-desc {
+        font-size: 14px;
+    }
+}
+
 /* FOOTER */
 
 footer {

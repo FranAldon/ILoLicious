@@ -17,7 +17,8 @@ const districts = [
         name: "Molo",
         description: "Molo is a historic district known for its heritage church and traditional cuisine.",
         food: "Pancit Molo",
-        foodDescription: "A popular Ilonggo soup containing dumplings served in flavorful chicken broth."
+        foodDescription: "A popular Ilonggo soup containing dumplings served in flavorful chicken broth.",
+        mapUrl: "https://maps.app.goo.gl/GvhTxc98URUakZMV6"
     },
 
     {
@@ -86,6 +87,17 @@ function showDistrict(index) {
 
     const district = districts[index];
 
+    // Generate 7 placeholder gallery items (image + description)
+    let galleryHTML = '';
+    for (let i = 1; i <= 7; i++) {
+        galleryHTML += `
+            <div class="gallery-item">
+                <div class="placeholder-img">Image ${i} Placeholder</div>
+                <p class="placeholder-desc">Placeholder description for image ${i}.</p>
+            </div>
+        `;
+    }
+
     document.getElementById("content").innerHTML = `
         <section class="details">
 
@@ -107,13 +119,33 @@ function showDistrict(index) {
 
             <p>${district.name}, Iloilo City, Philippines</p>
 
+            <!-- Embedded Google Map of the district -->
+            <div class="map-container">
+                <iframe
+                    width="100%"
+                    height="350"
+                    style="border:0; border-radius: 15px;"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    src="${district.mapEmbedUrl || `https://www.google.com/maps?q=${encodeURIComponent(district.name + ', Iloilo City, Philippines')}&output=embed`}"
+                    allowfullscreen
+                    aria-label="Google Map of ${district.name}">
+                </iframe>
+            </div>
+
             <a
                 class="map-button"
-                href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(district.name + ', Iloilo City, Philippines')}"
+                href="${district.mapUrl || `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(district.name + ', Iloilo City, Philippines')}`}"
                 target="_blank"
                 rel="noopener noreferrer">
                 View on Google Maps
             </a>
+
+            <!-- Photo Gallery: 7 placeholders -->
+            <h3>Photo Gallery</h3>
+            <div class="gallery">
+                ${galleryHTML}
+            </div>
 
         </section>
     `;
