@@ -15,7 +15,7 @@ body {
 .hero {
     background-image: url("images/CalleReal.jpg");
 
-    background-size: 120%;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     );
