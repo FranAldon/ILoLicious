@@ -15,7 +15,7 @@ body {
 .hero {
     background-image: url("images/CalleReal.jpg");
 
-    background-size: cover;
+    background-size: 120%;
     background-position: center;
     background-repeat: no-repeat;
     );
@@ -24,14 +24,6 @@ body {
     text-align: center;
     padding: 90px 20px;
     
-.hero h1 {
-    font-size: 48px;
-    font-size: 60px;
-    letter-spacing: 4px;
-    margin-bottom: 25px;
-
-}
-
 .hero p {
     font-size: 60px;
     font-weight: bold;
