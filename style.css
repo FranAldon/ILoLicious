@@ -13,7 +13,7 @@ body {
 /* HEADER */
 
 .hero {
-    background-image: url("images/CalleReal.jpg");
+    background-image: url("images/BackgroundPic/CalleReal.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -116,7 +116,7 @@ body {
 
 /* LA PAZ IMAGE */
 .district-button:nth-of-type(2)::after {
-    background-image: url("images/la-paz.jpg");
+    background-image: url("images/ButtPic/La-Paz.jpg");
 }
 
 /* JARO IMAGE */
