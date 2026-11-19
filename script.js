@@ -65,13 +65,7 @@ function showHome() {
                 and learn about their unique cuisines,
                 traditions, and local specialties.
             </p>
-
-            <h3>Choose a District</h3>
-
-            <p>
-                Hover over a district button to see its photo.
-                Click the button to view its information.
-            </p>
+            
         </section>
     `;
 
