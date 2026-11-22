@@ -6,7 +6,7 @@ const districts = [
         foodDescription: "A famous Ilonggo noodle soup made with pork, liver, broth, noodles, and crunchy toppings.",
         gallery: [
             {
-                image: src="images/BackgroundPic/LaPazPerm.jpg",
+                image: src="images/PhotoGallery/Lapaz/AliciaBatchoy[LaPaz].jpg",
                 title: "Alicia Special Batchoy",
                 description: `Alicia's Special Batchoy is a favorite local eatery in Iloilo known for its tasty noodle soup 
                             and classic snacks like puto and empanadas. It has several branches across Iloilo City,
