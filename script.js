@@ -13,7 +13,7 @@ const districts = [
                             including a popular spot in La Paz, making it a great place to enjoy warm, comforting Ilonggo food.`
             },
             {
-                image: src="images/BackgroundPic/LaPazPerm.jpg",
+                image: src="images/PhotoGallery/Lapaz/MadgeCafe[Lapaz].jpeg",
                 title: "Madge Cafe",
                 description: `Madge Cafe at La Paz Public Market is the original 1940s coffee shop known for traditional 
                         pre-war brewed local coffee and classic breakfast fare, while the Shops at Atria location pairs that 
@@ -21,13 +21,13 @@ const districts = [
                         offers a casual market-side stop for coffee, rice meals, and cold treats.`
             },
             {
-                image: "https://picsum.photos/400/300?id=102",
+                image: src="images/PhotoGallery/Lapaz/CharlieBurger[Lapaz].jpeg",
                 title: "Charlie's Burgers",
                 description: `A local burger stand in La Paz serving juicy burgers
                             with a variety of toppings and sauces.`
             },
             {
-                image: "https://picsum.photos/400/300?id=103",
+                image: src="images/PhotoGallery/Lapaz/Deco[Lapaz].jpeg",
                 title: "Deco's Original La Paz Batchoy Since 1938",
                 description: `A historic Ilonggo eatery at 18 Huervana St, La Paz Public Market, Iloilo City, widely recognized as the 
                         birthplace of La Paz batchoy.Traditional La Paz Batchoy. Serves steaming bowls of fresh round miki noodles in a rich pork,
@@ -35,7 +35,7 @@ const districts = [
                         spring onions, and crushed chicharon`
             },
             {
-                image: "https://picsum.photos/400/300?id=104",
+                image: src="images/PhotoGallery/Lapaz/BBW[Lapaz].jpeg",
                 title: "Big Bad Bowls",
                 description: `A casual, homegrown Asian fusion restaurant in Iloilo City known for serving hearty, budget-friendly rice and 
                         noodle bowls made with family recipes, fresh ingredients, and house-blended chili sauces. Features filling rice toppings 
@@ -43,7 +43,7 @@ const districts = [
                         lumpiang shanghai, and Milky Gulaman.`
             },
             {
-                image: "https://picsum.photos/400/300?id=105",
+                image: src="images/PhotoGallery/Lapaz/Ref[Lapaz].jpeg",
                 title: "Francisco’s Refreshment",
                 description: `Long-running, casual Filipino eatery and catering service in La Paz, Iloilo City, that has been serving Ilonggos since 1975. 
                         Located along Luna Street directly across from West Visayas State University, it is known for homestyle Ilonggo and Filipino comfort
@@ -51,7 +51,7 @@ const districts = [
                         and local soups.`
             },
             {
-                image: "https://picsum.photos/400/300?id=106",
+                image: src="images/PhotoGallery/Lapaz/Net[Lapaz].jpeg",
                 title: "Netong’s original special la paz batchoy",
                 description: `A foundational stall inside Public Market, widely recognized for defining classic La Paz batchoy flavor profile. 
                         They are known for La Paz batchoy, batchoy chicharon, sotanghon batchoy, puto and La Paz siopao.`
