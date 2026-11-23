@@ -240,6 +240,7 @@ const districts = [
                 description: `Cocina de Uhong is a cozy, home-style eatery known for turning fresh, homegrown mushrooms 
                 into delicious Filipino and Western comfort food. It is a great spot to enjoy healthy, meatless twists 
                 on classic favorites like burgers, sisig, and even ice cream.`
+            }
         ]
     },
 
@@ -345,7 +346,7 @@ const districts = [
                 leche flan, and tsokolate`
             },
             {
-                image: "",
+                image: "images/PhotoGallery/CityProper/iloggo lauya.png",
                 title: "Casa Maruja",
                 description: `Casa Maruja is a charming, old-world heritage home turned into a cozy, casual restaurant.
                 It offers a warm, nostalgic atmosphere where families and visitors can enjoy authentic, home-style Ilonggo
@@ -369,7 +370,7 @@ const districts = [
         foodDescription: "Explore seafood dishes and local specialties found in Lapuz.",
         gallery: [
             {
-                image: "images/BackgroundPic/LapuzPerm.jpg",
+                image: "images/PhotoGallery/Lapuz/Muelle[Lapuz].jpeg",
                 title: "Muelle Deli and Restaurant",
                 description: `Muelle Deli and Restaurant is a cozy, upscale riverside restaurant in Lapuz, Iloilo City, known 
                 for its scenic river views, live evening music, house-made sausages, steaks, and Filipino-international fusion 
@@ -385,29 +386,29 @@ const districts = [
                 aligue tortang talong, and creative drinks such as the Budbud Latte.`
             },
             {
-                image: "",
+                image: "images/PhotoGallery/Lapuz/Sisigan[Lapuz].jpg",
                 title: "Sisigan sa Lapuz by KL Food Station and Digz Batchoy",
                 description: `Anchors to Lapuz neighborhood dining scene They served hearty sizzling plates, grilled fish and portside 
                 comfort food. `
             {
-                image: "https://picsum.photos/400/300?id=163",
+                image: "images/PhotoGallery/Lapuz/3rdSt[Lapuz].jpg",
                 title: "3rd St. Coffee",
                 description: `A cozy, budget-friendly neighborhood cafe on Sampaguita St. (behind Assumption of Our Lady Church in 
                 Bo. Obrero, Lapuz) serving iced coffees, fruit teas, sandwiches, street-food snacks like siomai and pancit canton, 
                 and affordable rice meals.`
             },
             {
-                image: "https://picsum.photos/400/300?id=164",
+                image: "images/PhotoGallery/Lapuz/Dina[Lapuz].jpeg",
                 title: "Dina eatery",
                 description: `Dina Eatery. A casual, cash-only local carinderia on Everlasting St., Lapuz, well-liked by residents 
                 for affordable home-style Filipino dishes, especially its beef kansi, beefsteak, and pinakbet.`
             {
-                image: "https://picsum.photos/400/300?id=165",
+                image: "images/PhotoGallery/Lapuz/Bario[Lapuz].jpeg",
                 title: "Bario tapsilogan & Grill Chicken Inasal",
                 description: `Bario tapsilogan & Grill Chicken Inasal. A neighborhood grill and tapsilogan in Zone 3, Barrio Obrero, 
                 Lapuz, specializing in Ilonggo-style Chicken Inasal, fried bangus, pork sisig, and hearty silog rice meals.`
             {
-                image: "https://picsum.photos/400/300?id=166",
+                image: "images/PhotoGallery/Lapuz/Yard[Lapuz].jpeg",
                 title: "Yard Cafe & Bistro",
                 description:`Yard Cafe & Bistro is a casual, cozy neighborhood hangout in Zone 7, Don Esteban Lapuz, Iloilo City, 
                 known for affordable food, coffee, drinks, and live music or jam sessions. They Serves breakfast, brunch, lunch, 
