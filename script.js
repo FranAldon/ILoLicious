@@ -7,7 +7,7 @@ const districts = [
         gallery: [
             {
                 image: src="images/PhotoGallery/Lapaz/AliciaBatchoy[LaPaz].jpg",
-                title: "Alicia Special Batchoy",
+                title: "Alicia Special Batchoy", 
                 description: `Alicia's Special Batchoy is a favorite local eatery in Iloilo known for its tasty noodle soup 
                             and classic snacks like puto and empanadas. It has several branches across Iloilo City,
                             including a popular spot in La Paz, making it a great place to enjoy warm, comforting Ilonggo food.`
@@ -67,38 +67,54 @@ const districts = [
         gallery: [
             {
                 image: "images/BackgroundPic/JaroPerm.jpg",
-                title: "Jaro Cathedral",
-                description: "The majestic Jaro Cathedral, a historic landmark and seat of the Archdiocese of Jaro."
+                title: "Aquarium Cafe & Lounge",
+                description: `Aquarium Cafe & Lounge is a unique themed restaurant in Jaro, Iloilo City,
+                 where you can enjoy good food and coffee surrounded by giant fish tanks and live animals. 
+                 Along with colorful marine life, the cafe has indoor exhibits featuring reptiles, exotic birds, 
+                 and even big cats like tigers, making it a fun dining spot for families and animal lovers.`
             },
             {
                 image: "https://picsum.photos/400/300?id=111",
-                title: "Ancestral Houses",
-                description: "Elegant ancestral homes lining the streets of Jaro's historic district."
+                title: "Grace Kansi House",
+                description: `Grace Kansi House is a budget-friendly soup shop in Jaro, Iloilo City, 
+                known for serving hearty, cauldron-cooked kansi (sour and savory beef soup) in a casual 
+                setting with warm service, dine-in/takeout options, and free street parking.`
             },
             {
                 image: "https://picsum.photos/400/300?id=112",
-                title: "Jaro Campanario",
-                description: "The iconic Jaro Campanario bell tower standing proudly in Jaro Plaza."
+                title: "Original Biscocho Haus",
+                description: `Jaro flagship pasalubong destination ,having popularized iloilo’s signature 
+                twice baked buttered bread known as biscocho and chewy butterscotch bars since 1975.`
             },
             {
                 image: "https://picsum.photos/400/300?id=113",
-                title: "Jaro Delicacies",
-                description: "Traditional Jaro delicacies and native treats prepared with care and local flavor."
+                title: "Original De O Campo Barquillos",
+                description: `Jaro Historic wafer maker, crafting paper thin rolled Barquillos using
+                 traditional cast iron molds since 1896. They also served Piyaya, ube piyaya and barquiteros.`
             },
             {
                 image: "https://picsum.photos/400/300?id=114",
-                title: "Jaro River",
-                description: "Peaceful river scenes along the banks of the Jaro River."
+                title: "iCreamhorn",
+                description: `iCreamhorn (formerly known as Margec's Cream Horn) is an Iloilo bakery 
+                known for its cone-shaped Danish puff pastries filled with rich, creamy custard. Originally 
+                founded in 1987 and taken over by Francis Campos in 2017, it is a popular local treat and pasalubong.`
             },
             {
                 image: "https://picsum.photos/400/300?id=115",
-                title: "Jaro Town Center",
-                description: "Vibrant town center life in Jaro, one of Iloilo City's heritage districts."
+                title: "Casa Sinugba",
+                description: `Casa Sinugba is a Filipino restaurant in Jaro, Iloilo City (opened June 2026) serving 
+                grilled specialties, seafood, and Ilonggo comfort food in a spacious setting. Their specialties are 
+                the Crispy pork sisig, kansi (including sizzling kansi), grilled pecho, chili garlic shrimp, and 
+                tanigue.`
             },
             {
                 image: "https://picsum.photos/400/300?id=116",
-                title: "Jaro Cultural Festival",
-                description: "Colorful cultural celebrations showcasing Jaro's rich heritage and traditions."
+                title: "Rgies PH",
+                description: `Rgies PH (also known as Rgies Delicacies) is a wholesale bakery and pasalubong brand 
+                based in Iloilo City, Philippines, best known for pioneering flavored butterscotch squares.
+                They are best known for their chewy butterscotch squares—specifically pioneering the Mango Bits variant 
+                alongside Original Cashew, Dates, Choco Oats, Almonds, and Coffee. They also produce Yema Dulce de Leche, 
+                Butterscotti (a biscuit version of butterscotch), and cookies.`
             }
         ]
     },
