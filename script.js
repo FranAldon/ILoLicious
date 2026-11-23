@@ -128,38 +128,55 @@ const districts = [
         gallery: [
             {
                 image: "images/BackgroundPic/MoloPerm.jpeg",
-                title: "Molo Church",
-                description: "The striking Gothic-style Molo Church, known as the women's church of Iloilo."
+                title: "Baking studio by Theo’s",
+                description: `Baking studio by Theo’s is a modern cafe, bakery, and restaurant at 
+                North Grove in Molo, Iloilo City. It offers a cozy, green space where you can 
+                enjoy a wide variety of food, blending classic Filipino and Ilonggo delicacies 
+                with international dishes from around the world. Whether you are stopping by for 
+                a fresh baked good, local inspired coffee, wholesome meal, or evening drinks.`
             },
             {
                 image: "https://picsum.photos/400/300?id=121",
-                title: "Pancit Molo",
-                description: "A bowl of Pancit Molo, the district's signature dumpling soup in chicken broth."
+                title: "Kap Ising's Pancit Molo",
+                description: `The district's most famous spot for authentic Pancit Molo, served 
+                alongside fresh lumpia, potato empanada, and frozen packs to take home`
             },
             {
                 image: "https://picsum.photos/400/300?id=122",
-                title: "Molo Ancestral Homes",
-                description: "Well-preserved ancestral homes in Molo's historic district along the river."
+                title: "Panaderia de Molo",
+                description: `Oldest heritage bakeries in the Visayas, continuously baking 
+                traditional Spanish- influenced biscuits. They served their specialties 
+                like Galleys, Roquillos, biscocho de molo, lengua de Gato and polvoron.`
+
             },
             {
                 image: "https://picsum.photos/400/300?id=123",
-                title: "Molo Town Plaza",
-                description: "Molo town plaza surrounded by heritage structures and shade trees."
+                title: "Mama’s Kitchen and Food Products",
+                description: `Bakehouse originating from molo-arevalo border, famous for 
+                gourmet fruit and nut pastries. Such as mango chewies, cashew crunchies, 
+                Molo pastel, biscuit, tsokolate crunchies, santan spread , tablea bites 
+                and Dulce de leche.`
             },
             {
                 image: "https://picsum.photos/400/300?id=124",
-                title: "Molo Church Interior",
-                description: "The ornate interior of Molo Church with its distinctive red and white design."
+                title: "Ramboy’s",
+                description: `Traditional Filipino grill and lechonan. They are known for 
+                their Crispy-skinned grilled pork belly (lechon liempo) and roasted chicken 
+                (lechon manok), alongside Filipino group dishes like pansit and chopsuey.`
             },
             {
                 image: "https://picsum.photos/400/300?id=125",
-                title: "Historic Molo Streets",
-                description: "Quiet streets of Molo filled with history, charm, and old-world character."
-            },
+                title: "Kofi & Kompany",
+                description: `Specialty coffee, pastries, and all-day brunch.
+                They are known for Espresso drinks, frappes, thick Epicookies, 
+                soufflé pancakes, pasta, and Filipino breakfast plates.`
+            }
             {
                 image: "https://picsum.photos/400/300?id=126",
-                title: "Molo Local Eateries",
-                description: "Authentic Ilonggo flavors served in Molo's local eateries and carinderias."
+                title: "Batchoy Ilonggo Foodhaus",
+                description: `Ilonggo comfort food and noodle soups. They are known for their 
+                Signature La Paz-style batchoy (including Batchoy Overload and seafood variations)
+                as well as hearty bowls of arroz caldo and goto.`
             }
         ]
     },
@@ -172,34 +189,47 @@ const districts = [
         gallery: [
             {
                 image: "images/BackgroundPic/ArevaloPerm.jpg",
-                title: "Arevalo Coast",
-                description: "The coastal shoreline of Arevalo facing the sea with fishing boats and breeze."
+                title: "8 Villa Beach House",
+                description: `8 Villa Beach House is a laid-back beachfront restaurant in Villa Arevalo 
+                known for fresh seafood and classic Ilonggo dishes right on the sand. It is a revival of 
+                one of Iloilo's earliest coastal restaurants from the early 1900s, offering an old-school 
+                beach house vibe, sunset views, and occasional live music on weekends. Popular dishes 
+                include grilled boneless bangus and seafood bilaos, and the venue is both family-friendly 
+                and pet-friendly. `
             },
             {
                 image: "https://picsum.photos/400/300?id=131",
-                title: "Arevalo Seafood Market",
-                description: "Fresh seafood catches displayed at Arevalo's local market and fish port."
+                title: "Tatoy's Manokan and Seafood Restaurant",
+                description: `Tatoy's Manokan and Seafood Restaurant is a heritage Filipino dining establishment 
+                founded in the early 1970s by Honorato "Tiyo Tatoy" Espinosa. What began as a humble three-table 
+                nipa shanty operating on weekends evolved over decades into a widely recognized culinary destination 
+                known for authentic Ilonggo flavors, charcoal-roasted native chicken, and fresh seafood.`
             },
             {
                 image: "https://picsum.photos/400/300?id=132",
-                title: "Arevalo Church",
-                description: "Historic church serving the coastal community of Arevalo district."
+                title: "Breakthrough Restaurant",
+                description: `Breakthrough Restaurant is a long-standing Ilonggo seafood and Filipino dining spot in 
+                Iloilo City, known for live-tank seafood and beachside dining. They served baked talaba, Diwali, 
+                aligue rice, sizzling crabmeat and kilawin na tanigue.`
             },
             {
                 image: "https://picsum.photos/400/300?id=133",
-                title: "Arevalo Fiesta",
-                description: "Lively community celebrations and fiestas that bring Arevalo residents together."
+                title: "Advanceña-Camiña balay na Bato",
+                description: `1860’s ancestral mansion where visitors enjoy thick tablea hot chocolate whisked 
+                with a traditional wooden batirol. Their signatures are tsokolate de batirol, biscocho dunkers, 
+                and Guimaras Mango Tart.`
             },
             {
                 image: "https://picsum.photos/400/300?id=134",
-                title: "Fishing Boats",
-                description: "Traditional fishing boats docked along the Arevalo coast at sunrise."
-            },
+                title: "Arnel’s Talabahan",
+                description: `Arnel’s Talabahan is a humble, beachfront eatery loved by locals for its fresh, 
+                affordable oysters and relaxing seaside views. It is a great spot to enjoy simple, home-style 
+                grilled meats and seafood right by the water. 
+            }
             {
                 image: "https://picsum.photos/400/300?id=135",
-                title: "Arevalo Seafood Dishes",
-                description: "Freshly prepared seafood specialties from Arevalo's waters, grilled and steamed."
-            },
+                title: "Kiki’s CafeResto",
+                description: 
             {
                 image: "https://picsum.photos/400/300?id=136",
                 title: "Arevalo Coastal Village",
