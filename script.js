@@ -272,6 +272,7 @@ const districts = [
                 description: `Pedbacs Restaurant in Mandurriao, Iloilo City specializes in homestyle Filipino comfort food, 
                 highlighted by its Kanding Sarsyado (goat meat stew) alongside classics like pork kare-kare, all-meat dinuguan, 
                 callos, and all-day silog breakfasts`
+            },
             {
                 image: "images/PhotoGallery/Mandurriao/PUNOT[Man].jpeg",
                 title: "PUNOT",
@@ -301,6 +302,7 @@ const districts = [
                 This affordable spot is best known for big servings of tasty Asian comfort food with a touch of Ilonggo flavor. Their top dishes 
                 include Pad Thai, Vietnamese Grilled Pork Spare Ribs, and Sisig Pancit. It stands out in Iloilo's dining scene for mixing 
                 classic Asian favorites with warm Ilonggo hospitality and local twists. `
+            }
         ]
     },
 
@@ -390,6 +392,7 @@ const districts = [
                 title: "Sisigan sa Lapuz by KL Food Station and Digz Batchoy",
                 description: `Anchors to Lapuz neighborhood dining scene They served hearty sizzling plates, grilled fish and portside 
                 comfort food. `
+            },
             {
                 image: "images/PhotoGallery/Lapuz/3rdSt[Lapuz].jpg",
                 title: "3rd St. Coffee",
@@ -402,11 +405,13 @@ const districts = [
                 title: "Dina eatery",
                 description: `Dina Eatery. A casual, cash-only local carinderia on Everlasting St., Lapuz, well-liked by residents 
                 for affordable home-style Filipino dishes, especially its beef kansi, beefsteak, and pinakbet.`
+            },
             {
                 image: "images/PhotoGallery/Lapuz/Bario[Lapuz].jpeg",
                 title: "Bario tapsilogan & Grill Chicken Inasal",
                 description: `Bario tapsilogan & Grill Chicken Inasal. A neighborhood grill and tapsilogan in Zone 3, Barrio Obrero, 
                 Lapuz, specializing in Ilonggo-style Chicken Inasal, fried bangus, pork sisig, and hearty silog rice meals.`
+            },
             {
                 image: "images/PhotoGallery/Lapuz/Yard[Lapuz].jpeg",
                 title: "Yard Cafe & Bistro",
