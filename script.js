@@ -170,7 +170,7 @@ const districts = [
                 description: `Specialty coffee, pastries, and all-day brunch.
                 They are known for Espresso drinks, frappes, thick Epicookies, 
                 soufflé pancakes, pasta, and Filipino breakfast plates.`
-            }
+            },
             {
                 image: "https://picsum.photos/400/300?id=126",
                 title: "Batchoy Ilonggo Foodhaus",
@@ -225,15 +225,19 @@ const districts = [
                 description: `Arnel’s Talabahan is a humble, beachfront eatery loved by locals for its fresh, 
                 affordable oysters and relaxing seaside views. It is a great spot to enjoy simple, home-style 
                 grilled meats and seafood right by the water. 
-            }
+                `
+            },
             {
                 image: "https://picsum.photos/400/300?id=135",
                 title: "Kiki’s CafeResto",
-                description: 
+                description: "A local cafe and restaurant in Arevalo."
+            },
             {
                 image: "https://picsum.photos/400/300?id=136",
                 title: "Arevalo Coastal Village",
-                description: "Scenic coastal village life in Arevalo, where the sea meets the community."
+                description: `Kiki’s CafeResto is a peaceful, nature-filled neighborhood cafe and eatery known 
+                for its freshly baked pies and comforting rice meals. It is a relaxing spot to hang out with 
+                friends or family over coffee, dessert, and home-style Filipino food. `
             }
         ]
     },
