@@ -428,6 +428,7 @@ const districts = [
 // ============================================================================
 let activeIndex = null;   // null = home view
 let isSearching = false;
+let activeCategory = null; // 'all' | 'meals' | 'desserts' | 'beverages' | null
 
 const navButtons = document.querySelectorAll(".nav-button");
 const searchInput = document.getElementById("districtSearch");
@@ -441,6 +442,19 @@ function escapeHtml(text) {
     const div = document.createElement("div");
     div.textContent = text;
     return div.innerHTML;
+}
+
+function getItemCategory(title) {
+    const t = title.toLowerCase();
+    if (t.includes("cafe") || t.includes("coffee") || t.includes("refreshment") || t.includes("bistro") || t.includes("kofi")) {
+        return "Beverages";
+    }
+    if (t.includes("biscocho") || t.includes("barquillos") || t.includes("creamhorn") || t.includes("piyaya") ||
+        t.includes("butterscotch") || t.includes("panaderia") || t.includes("bakery") ||
+        t.includes("pasalubong") || t.includes("delicacies") || t.includes("bakehouse") || t.includes("baking studio")) {
+        return "Desserts";
+    }
+    return "Meals";
 }
 
 function setActiveButton(target) {
@@ -513,6 +527,23 @@ function closeLightbox() {
     document.getElementById("lightboxCaption").textContent = "";
     document.getElementById("lightboxDescription").textContent = "";
     document.body.style.overflow = "";
+}
+
+// ============================================================================
+// Category Filter
+// ============================================================================
+function filterCategory(category) {
+    activeCategory = category === "all" ? null : category;
+
+    document.querySelectorAll(".category-pill").forEach((pill) => {
+        pill.classList.toggle("active", pill.dataset.category === (activeCategory || "all"));
+    });
+
+    if (activeIndex !== null) {
+        showDistrict(activeIndex);
+    } else {
+        showHome();
+    }
 }
 
 // Delegate lightbox clicks on gallery images (content is regenerated)
@@ -647,11 +678,15 @@ function showHome() {
                 traditions, and local specialties across the seven districts of Iloilo City.
             </p>
 
+            ${activeCategory ? `<p style="text-align:center; color:var(--color-primary-dark); font-weight:600; margin-bottom:16px;">Showing: ${activeCategory.charAt(0).toUpperCase() + activeCategory.slice(1)}</p>` : ""}
             <div style="display:flex; flex-wrap:wrap; gap:18px; justify-content:center; margin-bottom:30px;">
-                ${districts
+                ${(activeCategory
+                    ? districts.filter((d) => d.gallery.some((item) => getItemCategory(item.title) === activeCategory))
+                    : districts
+                )
                     .map(
-                        (d, i) => `
-                    <button class="nav-button district-button" type="button" onclick="showDistrict(${i})"
+                        (d) => `
+                    <button class="nav-button district-button" type="button" onclick="showDistrict(${districts.indexOf(d)})"
                         style="min-width:140px; padding:16px 20px; font-size:16px;">
                         ${escapeHtml(d.name)}
                     </button>
@@ -693,6 +728,7 @@ function showDistrict(index) {
     // Build gallery items (grid) with lazy loading and broken-image fallback
     let galleryHTML = "";
     district.gallery.forEach((item, i) => {
+        if (activeCategory && getItemCategory(item.title) !== activeCategory) return;
         galleryHTML += `
             <div class="gallery-item" role="button" tabindex="0"
                 onclick="openLightbox(this.querySelector('.gallery-img').src, this.querySelector('.gallery-title').textContent, this.querySelector('.gallery-desc').textContent)"
@@ -712,6 +748,10 @@ function showDistrict(index) {
             </div>
         `;
     });
+
+    if (!galleryHTML) {
+        galleryHTML = `<p style="text-align:center; color:var(--color-text-muted); padding:20px;">No ${activeCategory} items found in this district.</p>`;
+    }
 
     // Map URL: Google short links (goo.gl / app.goo.gl) cannot be embedded in an iframe,
     // so always use a proper embed URL for the map frame. Use mapUrl only for the

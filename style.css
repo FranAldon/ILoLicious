@@ -323,6 +323,68 @@ img {
 }
 
 /* ==========================================================================
+   FOOD CATEGORY SLIDING MENU
+   ========================================================================== */
+.category-menu {
+    margin: 20px auto 0;
+    width: 92%;
+    max-width: var(--max-width);
+}
+
+.category-scroll {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    justify-content: center;
+    padding-bottom: 10px;
+    scrollbar-width: thin;
+}
+
+.category-scroll::-webkit-scrollbar {
+    height: 6px;
+}
+
+.category-scroll::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.category-scroll::-webkit-scrollbar-thumb {
+    background: var(--color-border-strong);
+    border-radius: 10px;
+}
+
+.category-pill {
+    flex-shrink: 0;
+    background: var(--color-surface);
+    border: 2px solid var(--color-border);
+    color: var(--color-text);
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    white-space: nowrap;
+}
+
+.category-pill:hover {
+    border-color: var(--color-primary);
+    color: var(--color-primary-dark);
+}
+
+.category-pill.active {
+    background: var(--color-primary);
+    color: var(--color-text-inverse);
+    border-color: var(--color-primary);
+    box-shadow: var(--color-shadow);
+}
+
+.category-pill:focus-visible {
+    outline: 3px solid var(--color-accent);
+    outline-offset: 3px;
+}
+
+/* ==========================================================================
    MAIN CONTENT
    ========================================================================== */
 #content {
