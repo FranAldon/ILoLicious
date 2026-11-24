@@ -581,11 +581,12 @@ img {
     background: color-mix(in srgb, #000000 92%, transparent);
     display: none;
     align-items: center;
-    justify-content: center;
-    padding: 40px;
+    overflow-y: auto;
+    padding: 60px 40px;
     opacity: 0;
     transition: opacity var(--transition-base);
     backdrop-filter: blur(4px);
+    -webkit-overflow-scrolling: touch;
 }
 
 .lightbox.open {
@@ -603,10 +604,11 @@ img {
     position: relative;
     z-index: 2;
     max-width: 90vw;
-    max-height: 85vh;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 16px;
 }
 
 .lightbox-link {

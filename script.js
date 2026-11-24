@@ -16,7 +16,7 @@ const districts = [
             {
                 image: "images/PhotoGallery/Lapaz/MadgeCafe[Lapaz].jpeg",
                 title: "Madge Cafe",
-                link: "",
+                link: "https://www.facebook.com/madgecafeatriaofficialpage",
                 description: `Madge Cafe at La Paz Public Market is the original 1940s coffee shop known for traditional
                         pre-war brewed local coffee and classic breakfast fare, while the Shops at Atria location pairs that
                         heritage coffee with a modern retail setting, cakes, and evening hours, and the Iloilo Central Market branch
