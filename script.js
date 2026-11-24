@@ -490,13 +490,16 @@ window.addEventListener("keydown", (e) => {
 // ============================================================================
 // Lightbox
 // ============================================================================
-function openLightbox(src, caption) {
+function openLightbox(src, title, description) {
     const lightbox = document.getElementById("lightbox");
     const img = document.getElementById("lightboxImg");
     const cap = document.getElementById("lightboxCaption");
+    const desc = document.getElementById("lightboxDescription");
     img.src = src;
-    img.alt = caption || "";
-    cap.textContent = caption || "";
+    img.alt = title || "";
+    cap.textContent = title || "";
+    desc.textContent = description || "";
+    desc.style.display = description ? "block" : "none";
     lightbox.classList.add("open");
     lightbox.setAttribute("aria-hidden", "false");
     document.body.style.overflow = "hidden";
@@ -507,6 +510,8 @@ function closeLightbox() {
     lightbox.classList.remove("open");
     lightbox.setAttribute("aria-hidden", "true");
     document.getElementById("lightboxImg").src = "";
+    document.getElementById("lightboxCaption").textContent = "";
+    document.getElementById("lightboxDescription").textContent = "";
     document.body.style.overflow = "";
 }
 
@@ -514,10 +519,12 @@ function closeLightbox() {
 document.addEventListener("click", (e) => {
     const galleryImg = e.target.closest(".gallery-img");
     if (galleryImg && galleryImg.src) {
-        const caption =
-            galleryImg.closest(".gallery-item")?.querySelector(".gallery-title")
-                ?.textContent || "";
-        openLightbox(galleryImg.src, caption);
+        const galleryItem = galleryImg.closest(".gallery-item");
+        const title =
+            galleryItem?.querySelector(".gallery-title")?.textContent || "";
+        const description =
+            galleryItem?.querySelector(".gallery-desc")?.textContent || "";
+        openLightbox(galleryImg.src, title, description);
     }
 });
 
@@ -688,8 +695,8 @@ function showDistrict(index) {
     district.gallery.forEach((item, i) => {
         galleryHTML += `
             <div class="gallery-item" role="button" tabindex="0"
-                onclick="openLightbox(this.querySelector('.gallery-img').src, this.querySelector('.gallery-title').textContent)"
-                onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openLightbox(this.querySelector('.gallery-img').src, this.querySelector('.gallery-title').textContent)}">
+                onclick="openLightbox(this.querySelector('.gallery-img').src, this.querySelector('.gallery-title').textContent, this.querySelector('.gallery-desc').textContent)"
+                onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openLightbox(this.querySelector('.gallery-img').src, this.querySelector('.gallery-title').textContent, this.querySelector('.gallery-desc').textContent)}">
                 <img src="${escapeHtml(item.image)}" alt="${escapeHtml(
             `${district.name} gallery image ${i + 1}`
         )}" class="gallery-img" loading="eager" decoding="async"

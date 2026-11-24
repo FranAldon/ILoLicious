@@ -562,6 +562,18 @@ img {
     font-size: 17px;
     text-align: center;
     padding: 0 12px;
+    font-weight: 700;
+    text-shadow: 0 2px 8px color-mix(in srgb, black 50%, transparent);
+}
+
+.lightbox-description {
+    margin-top: 6px;
+    color: color-mix(in srgb, var(--color-text-inverse) 85%, transparent);
+    font-size: 15px;
+    line-height: 1.5;
+    text-align: center;
+    padding: 0 12px;
+    max-width: 60ch;
     text-shadow: 0 2px 8px color-mix(in srgb, black 50%, transparent);
 }
 
