@@ -4,80 +4,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>ILoLicious</title>
+    <title>ILoLicious | Discover the Taste of Iloilo</title>
     <link rel="icon" type="image/png" href="images/LogosPic/TransparentLogo.png">
-
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <a href="#content" class="skip-link">Skip to content</a>
 
-    <header class="hero">
-    
-    <div class="logo-text">
-        <p style="Font-Family: Palatino">
-            Welcome to ILoLicious! <br> Explore
-            different dishes<br> and cuisines around the <br> Seven Districts of Iloilo City
-        </p>
-    </div>
-
+    <header class="hero" aria-label="Site header">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="logo-text">
+                <h1>ILoLicious</h1>
+                <p>Explore the distinct flavors of the Seven Districts of Iloilo City</p>
+            </div>
+        </div>
     </header>
 
-    <nav class="district-nav">
-
-        <button class="nav-button home-button"
-            type="button" onclick="showHome()">
-            Home
+    <nav class="district-nav" aria-label="District navigation">
+        <button class="nav-button home-button active" type="button" onclick="showHome()" aria-label="Go to Home">
+            <span class="nav-label">Home</span>
         </button>
 
-        <button class="nav-button district-button"
-            type="button" onclick="showDistrict(0)">
-            La Paz
+        <button class="nav-button district-button" type="button" onclick="showDistrict(0)" aria-label="La Paz district">
+            <span class="nav-label">La Paz</span>
         </button>
 
-        <button class="nav-button district-button"
-            type="button" onclick="showDistrict(1)">
-            Jaro
+        <button class="nav-button district-button" type="button" onclick="showDistrict(1)" aria-label="Jaro district">
+            <span class="nav-label">Jaro</span>
         </button>
 
-        <button class="nav-button district-button"
-            type="button" onclick="showDistrict(2)">
-            Molo
+        <button class="nav-button district-button" type="button" onclick="showDistrict(2)" aria-label="Molo district">
+            <span class="nav-label">Molo</span>
         </button>
 
-        <button class="nav-button district-button"
-            type="button" onclick="showDistrict(3)">
-            Arevalo (Villa)
+        <button class="nav-button district-button" type="button" onclick="showDistrict(3)" aria-label="Arevalo district">
+            <span class="nav-label">Arevalo (Villa)</span>
         </button>
 
-        <button class="nav-button district-button"
-            type="button" onclick="showDistrict(4)">
-            Mandurriao
+        <button class="nav-button district-button" type="button" onclick="showDistrict(4)" aria-label="Mandurriao district">
+            <span class="nav-label">Mandurriao</span>
         </button>
 
-        <button class="nav-button district-button"
-            type="button" onclick="showDistrict(5)">
-            City Proper
+        <button class="nav-button district-button" type="button" onclick="showDistrict(5)" aria-label="City Proper district">
+            <span class="nav-label">City Proper</span>
         </button>
 
-        <button class="nav-button district-button"
-            type="button" onclick="showDistrict(6)">
-            Lapuz
+        <button class="nav-button district-button" type="button" onclick="showDistrict(6)" aria-label="Lapuz district">
+            <span class="nav-label">Lapuz</span>
         </button>
-
     </nav>
 
+    <div class="search-container">
+        <input type="search" id="districtSearch" placeholder="Search places, dishes, districts..."
+            aria-label="Search districts and food places" autocomplete="off">
+        <p class="search-hint">Try "batchoy", "seafood", "coffee", or a district name</p>
+    </div>
 
-    <main id="content"></main>
+    <main id="content" tabindex="-1"></main>
 
+    <button id="backToTop" aria-label="Back to top" onclick="scrollToTop()">&#8593;</button>
+
+    <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true"
+        aria-label="Image preview">
+        <div class="lightbox-backdrop" onclick="closeLightbox()"></div>
+        <div class="lightbox-content">
+            <button class="lightbox-close" onclick="closeLightbox()" aria-label="Close image">&#215;</button>
+            <img class="lightbox-img" id="lightboxImg" src="" alt="">
+            <p class="lightbox-caption" id="lightboxCaption"></p>
+        </div>
+    </div>
 
     <footer>
-        <p>© 2026 ILoLicious | Discover the Taste of Iloilo</p>
+        <p class="footer-copy">&copy; 2026 ILoLicious &bull; Discover the Taste of Iloilo</p>
+        <div class="footer-links">
+            <a href="#">Home</a>
+            <a href="#content">Districts</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
     </footer>
 
-
     <script src="script.js"></script>
-
 </body>
+
 </html>
