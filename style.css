@@ -177,14 +177,14 @@ img {
    ========================================================================== */
 .district-nav {
     background: var(--color-surface);
-    width: 92%;
-    max-width: var(--max-width);
-    margin: 18px auto 0;
-    padding: 16px 14px;
+    width: 96%;
+    max-width: 1200px;
+    margin: 30px auto 0;
+    padding: 20px 16px;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 10px;
     border-radius: var(--radius-lg);
     position: sticky;
@@ -629,6 +629,15 @@ img {
     opacity: 0;
     pointer-events: none;
     transition: right 0.3s ease, opacity 0.3s ease, background 0.18s ease;
+}
+
+.lightbox-link--location {
+    top: 62%;
+    background: var(--color-accent);
+}
+
+.lightbox-link--location:hover {
+    background: var(--color-accent-dark);
 }
 
 .lightbox.open .lightbox-link {

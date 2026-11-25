@@ -62,7 +62,8 @@ const districts = [
                 link: "",
                 description: `A foundational stall inside Public Market, widely recognized for defining classic La Paz batchoy flavor profile.
                         They are known for La Paz batchoy, batchoy chicharon, sotanghon batchoy, puto and La Paz siopao.`
-            }
+            },
+            
         ]
     },
 
@@ -532,12 +533,13 @@ window.addEventListener("keydown", (e) => {
 // ============================================================================
 // Lightbox
 // ============================================================================
-function openLightbox(src, title, description, link) {
+function openLightbox(src, title, description, link, locationLink) {
     const lightbox = document.getElementById("lightbox");
     const img = document.getElementById("lightboxImg");
     const cap = document.getElementById("lightboxCaption");
     const desc = document.getElementById("lightboxDescription");
     const lnk = document.getElementById("lightboxLink");
+    const locLnk = document.getElementById("lightboxLocationLink");
     img.src = src;
     img.alt = title || "";
     cap.textContent = title || "";
@@ -548,6 +550,12 @@ function openLightbox(src, title, description, link) {
         lnk.style.display = "inline-block";
     } else {
         lnk.style.display = "none";
+    }
+    if (locationLink) {
+        locLnk.href = locationLink;
+        locLnk.style.display = "inline-block";
+    } else {
+        locLnk.style.display = "none";
     }
     lightbox.classList.add("open");
     lightbox.setAttribute("aria-hidden", "false");
@@ -563,6 +571,8 @@ function closeLightbox() {
     document.getElementById("lightboxDescription").textContent = "";
     document.getElementById("lightboxLink").href = "#";
     document.getElementById("lightboxLink").style.display = "none";
+    document.getElementById("lightboxLocationLink").href = "#";
+    document.getElementById("lightboxLocationLink").style.display = "none";
     document.body.style.overflow = "";
 }
 
@@ -595,7 +605,16 @@ document.addEventListener("click", (e) => {
         const link =
             galleryItem?.dataset.link ||
             `https://www.google.com/search?q=${encodeURIComponent(title)}`;
-        openLightbox(galleryImg.src, title, description, link);
+        const locationLink =
+            galleryItem?.dataset.locationLink ||
+            `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(title)}`;
+        openLightbox(
+            galleryImg.src,
+            title,
+            description,
+            link,
+            locationLink
+        );
     }
 });
 
@@ -772,8 +791,9 @@ function showDistrict(index) {
         galleryHTML += `
             <div class="gallery-item" role="button" tabindex="0"
                 data-link="${escapeHtml(item.link || `https://www.google.com/search?q=${encodeURIComponent(district.name + " " + item.title)}`)}"
-                onclick="openLightbox(this.querySelector('.gallery-img').src, this.querySelector('.gallery-title').textContent, this.querySelector('.gallery-desc').textContent, this.dataset.link)"
-                onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openLightbox(this.querySelector('.gallery-img').src, this.querySelector('.gallery-title').textContent, this.querySelector('.gallery-desc').textContent, this.dataset.link)}">
+                data-location-link="${escapeHtml(item.locationLink || district.mapUrl || `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(district.name + ", Iloilo City, Philippines")}`)}"
+                onclick="openLightbox(this.querySelector('.gallery-img').src, this.querySelector('.gallery-title').textContent, this.querySelector('.gallery-desc').textContent, this.dataset.link, this.dataset.locationLink)"
+                onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openLightbox(this.querySelector('.gallery-img').src, this.querySelector('.gallery-title').textContent, this.querySelector('.gallery-desc').textContent, this.dataset.link, this.dataset.locationLink)}">
                 <img src="${escapeHtml(item.image)}" alt="${escapeHtml(
             `${district.name} gallery image ${i + 1}`
         )}" class="gallery-img" loading="eager" decoding="async"
