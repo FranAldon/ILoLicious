@@ -738,21 +738,6 @@ function showHome() {
             </p>
 
             ${activeCategory ? `<p style="text-align:center; color:var(--color-primary-dark); font-weight:600; margin-bottom:16px;">Showing: ${activeCategory.charAt(0).toUpperCase() + activeCategory.slice(1)}</p>` : ""}
-            <div style="display:flex; flex-wrap:wrap; gap:18px; justify-content:center; margin-bottom:30px;">
-                ${(activeCategory
-                    ? districts.filter((d) => d.gallery.some((item) => getItemCategory(item.title) === activeCategory))
-                    : districts
-                )
-                    .map(
-                        (d) => `
-                    <button class="nav-button district-button" type="button" onclick="showDistrict(${districts.indexOf(d)})"
-                        style="min-width:140px; padding:16px 20px; font-size:16px;">
-                        ${escapeHtml(d.name)}
-                    </button>
-                `
-                    )
-                    .join("")}
-            </div>
 
             <hr>
 
