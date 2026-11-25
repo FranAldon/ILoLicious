@@ -876,6 +876,13 @@ const searchInput = document.getElementById("districtSearch");
 const contentEl = document.getElementById("content");
 const backToTopBtn = document.getElementById("backToTop");
 
+//Contact Section
+const teamContactInfo = [
+    { label: "Email", value: "ILoLicious@gmail.com" },
+    { label: "Phone", value: "+15552345678" },
+    { label: "Social media", value: "https://www.facebook.com/profile.php?id=61553662959404" }
+];
+
 // ============================================================================
 // Helpers
 // ============================================================================
@@ -1141,7 +1148,7 @@ searchInput.addEventListener("input", (e) => {
 // ============================================================================
 // Home
 // ============================================================================
-function showHome() {
+function showHome(scrollTarget = null) {
     activeIndex = null;
     isSearching = false;
     searchInput.value = "";
@@ -1149,7 +1156,7 @@ function showHome() {
 
     contentEl.innerHTML = `
         <section class="details">
-            <h2 style="text-align:center;">Welcome to Iloilo!</h2>
+            <h2 id="home" style="text-align:center;">Welcome to Iloilo!</h2>
             <hr>
 
             <p style="text-align:center; font-size:19px; max-width:700px; margin:0 auto 24px;">
@@ -1161,7 +1168,7 @@ function showHome() {
 
             <hr>
 
-            <h2 style="text-align:center;">About</h2>
+            <h2 id="about" style="text-align:center;">About</h2>
             <p>
                 ILoLicious is your guide to discovering the unique flavors, traditions, and local
                 specialties across the seven districts of Iloilo City. From the famous La Paz Batchoy
@@ -1172,11 +1179,31 @@ function showHome() {
                 Explore each district to find embedded maps, photo galleries, and signature dishes
                 waiting to be discovered. Tap a district button above to begin.
             </p>
+
+            <section class="team-contact" id="contact" aria-labelledby="contact-heading">
+                <h2 id="contact-heading">Contact</h2>
+                <dl>
+                    ${teamContactInfo.map(({ label, value }) => `
+                        <div class="team-contact-item">
+                            <dt>${escapeHtml(label)}</dt>
+                            <dd>${escapeHtml(value)}</dd>
+                        </div>
+                    `).join("")}
+                </dl>
+            </section>
         </section>
     `;
 
     animateContent();
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    if (scrollTarget) {
+        document.getElementById(scrollTarget)?.scrollIntoView({
+            behavior: "smooth",
+            block: "center",
+            inline: "nearest"
+        });
+    } else {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    }
 }
 
 // ============================================================================

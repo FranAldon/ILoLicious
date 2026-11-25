@@ -435,6 +435,43 @@ img {
     margin: 24px 0;
 }
 
+.team-contact {
+    margin-top: 24px;
+    padding-top: 16px;
+    border-top: 2px solid var(--color-border);
+}
+
+.team-contact h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.team-contact dl {
+    display: grid;
+    gap: 8px;
+    max-width: 460px;
+    margin: 12px auto 0;
+}
+
+.team-contact-item {
+    display: grid;
+    grid-template-columns: minmax(120px, 1fr) 2fr;
+    gap: 12px;
+    padding: 10px 14px;
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+}
+
+.team-contact-item dt {
+    color: var(--color-primary-dark);
+    font-weight: 700;
+}
+
+.team-contact-item dd {
+    overflow-wrap: anywhere;
+}
+
 /* Food card */
 .food-card {
     background: var(--color-bg);
