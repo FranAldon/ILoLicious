@@ -13,7 +13,8 @@ const districts = [
                 locationLink:"https://maps.app.goo.gl/cf62Cd97fxEgZm619",
                 description: `Alicia's Special Batchoy is a favorite local eatery in Iloilo known for its tasty noodle soup
                             and classic snacks like puto and empanadas. It has several branches across Iloilo City,
-                            including a popular spot in La Paz, making it a great place to enjoy warm, comforting Ilonggo food.`
+                            including a popular spot in La Paz, making it a great place to enjoy warm, comforting Ilonggo food.`,
+                category: "meals", 
             },
             {
                 image: "images/PhotoGallery/Lapaz/MadgeCafe[Lapaz].jpeg",
@@ -892,17 +893,23 @@ function escapeHtml(text) {
     return div.innerHTML;
 }
 
-function getItemCategory(title) {
-    const t = title.toLowerCase();
+// Set an item's category to "meals", "desserts", or "beverages" to choose its filter manually.
+// If no category is set, infer it from the item's title.
+function getItemCategory(item) {
+    if (item.category) {
+        return item.category.trim().toLowerCase();
+    }
+
+    const t = item.title.toLowerCase();
     if (t.includes("cafe") || t.includes("coffee") || t.includes("refreshment") || t.includes("bistro") || t.includes("kofi")) {
-        return "Beverages";
+        return "beverages";
     }
     if (t.includes("biscocho") || t.includes("barquillos") || t.includes("creamhorn") || t.includes("piyaya") ||
         t.includes("butterscotch") || t.includes("panaderia") || t.includes("bakery") ||
         t.includes("pasalubong") || t.includes("delicacies") || t.includes("bakehouse") || t.includes("baking studio")) {
-        return "Desserts";
+        return "desserts";
     }
-    return "Meals";
+    return "meals";
 }
 
 function setActiveButton(target) {
@@ -1219,7 +1226,7 @@ function showDistrict(index) {
     // Build gallery items (grid) with lazy loading and broken-image fallback
     let galleryHTML = "";
     district.gallery.forEach((item, i) => {
-        if (activeCategory && getItemCategory(item.title) !== activeCategory) return;
+        if (activeCategory && getItemCategory(item) !== activeCategory) return;
         galleryHTML += `
             <div class="gallery-item" role="button" tabindex="0"
                 data-link="${escapeHtml(item.link || `https://www.google.com/search?q=${encodeURIComponent(district.name + " " + item.title)}`)}"
