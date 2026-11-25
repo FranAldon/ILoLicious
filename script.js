@@ -25,14 +25,14 @@ const districts = [
             {
                 image: "images/PhotoGallery/Lapaz/CharlieBurger[Lapaz].jpeg",
                 title: "Charlie's Burgers",
-                link: "",
+                link: "https://www.facebook.com/charlies.ilo",
                 description: `A local burger stand in La Paz serving juicy burgers
                             with a variety of toppings and sauces.`
             },
             {
                 image: "images/PhotoGallery/Lapaz/Deco[Lapaz].jpeg",
                 title: "Deco's Original La Paz Batchoy Since 1938",
-                link: "",
+                link: "https://www.facebook.com/profile.php?id=100075636563464",
                 description: `A historic Ilonggo eatery at 18 Huervana St, La Paz Public Market, Iloilo City, widely recognized as the
                         birthplace of La Paz batchoy.Traditional La Paz Batchoy. Serves steaming bowls of fresh round miki noodles in a rich pork,
                         beef, and bone marrow broth seasoned with guinamos (shrimp paste), topped generously with pork loin, liver, innards, toasted garlic,
@@ -41,7 +41,7 @@ const districts = [
             {
                 image: "images/PhotoGallery/Lapaz/BBW[Lapaz].jpeg",
                 title: "Big Bad Bowls",
-                link: "",
+                link: "https://bigbadbowls.com/contact-us/",
                 description: `A casual, homegrown Asian fusion restaurant in Iloilo City known for serving hearty, budget-friendly rice and
                         noodle bowls made with family recipes, fresh ingredients, and house-blended chili sauces. Features filling rice toppings
                         including Big Bad Tapa, Kansi Flakes, Sisig, Beef Pares, Bibimbowl, Donkkaesu, and Thai Basil Pork alongside pan-fried gyoza,
@@ -50,7 +50,7 @@ const districts = [
             {
                 image: "images/PhotoGallery/Lapaz/Ref[Lapaz].jpeg",
                 title: "Francisco's Refreshment",
-                link: "",
+                link: "https://www.facebook.com/fracs1975",
                 description: `Long-running, casual Filipino eatery and catering service in La Paz, Iloilo City, that has been serving Ilonggos since 1975.
                         Located along Luna Street directly across from West Visayas State University, it is known for homestyle Ilonggo and Filipino comfort
                         food as well as classic desserts. Popular dishes include bakareta (beef stew), fried chicken, fish salpicao, bihon guisado, valenciana,
@@ -59,9 +59,23 @@ const districts = [
             {
                 image: "images/PhotoGallery/Lapaz/Net[Lapaz].jpeg",
                 title: "Netong's original special la paz batchoy",
-                link: "",
+                link: "https://www.facebook.com/netongsrestaurant",
                 description: `A foundational stall inside Public Market, widely recognized for defining classic La Paz batchoy flavor profile.
                         They are known for La Paz batchoy, batchoy chicharon, sotanghon batchoy, puto and La Paz siopao.`
+            },
+            {
+                image: "images/PhotoGallery/Lapaz/Green[Lapaz].jpg",
+                title: "Greenhouse Cafe",
+                link: "https://www.facebook.com/share/18WNj7sbmt/",
+                description: `A neighborhood café and restaurant offering meals, snacks, coffee, and refreshing drinks. 
+                It has indoor and outdoor seating, making it a casual place for students and groups.`
+            },
+            {
+                image: "images/PhotoGallery/Lapaz/Inggo[Lapaz].jpg",
+                title: "Inggo's Original La Paz Batchoy",
+                link: "https://www.facebook.com/share/1GtUpzdMb4/",
+                description: `A historic batchoy establishment associated with Domingo Inggo Lozada and the early beginnings of La Paz Batchoy. 
+                It serves traditional noodle soup with pork, broth, and different noodle choices.`
             },
             
         ]
@@ -130,7 +144,21 @@ const districts = [
                 They are best known for their chewy butterscotch squares—specifically pioneering the Mango Bits variant
                 alongside Original Cashew, Dates, Choco Oats, Almonds, and Coffee. They also produce Yema Dulce de Leche,
                 Butterscotti (a biscuit version of butterscotch), and cookies.`
-            }
+            },
+            {
+                image: "images/PhotoGallery/Jaro/MC[Jaro].jpg",
+                title: "M&C Bakehouse",
+                link: "https://www.facebook.com/MCBAKEHOUSE#",
+                description: `A neighborhood bakery offering freshly baked products and local-style pasalubong. 
+                Its almond biscocho and polvoron are among the products mentioned by customers.`
+            },
+            {
+                image: "images/PhotoGallery/Jaro/Pj[Jaro].jpg",
+                title: "PJ Delicacies",
+                link: "https://www.facebook.com/PJDelicacies",
+                description: `A local bakery and pasalubong shop offering Ilonggo delicacies and baked treats. 
+                It is known for its barquillos, including goat's milk barquillos, and other take-home products.`
+            },
         ]
     },
 
@@ -199,7 +227,19 @@ const districts = [
                 description: `Ilonggo comfort food and noodle soups. They are known for their
                 Signature La Paz-style batchoy (including Batchoy Overload and seafood variations)
                 as well as hearty bowls of arroz caldo and goto.`
-            }
+            },
+            {
+                image: "",
+                title: "",
+                link: "",
+                description: ``
+            },
+            {
+                image: "",
+                title: "",
+                link: "",
+                description: ``
+            },
         ]
     },
 
