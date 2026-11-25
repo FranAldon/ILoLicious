@@ -177,8 +177,8 @@ img {
    ========================================================================== */
 .district-nav {
     background: var(--color-surface);
-    width: 96%;
-    max-width: 1200px;
+    width: 98%;
+    max-width: 1400px;
     margin: 30px auto 0;
     padding: 20px 16px;
     display: flex;
@@ -207,7 +207,9 @@ img {
     position: relative;
     overflow: visible;
     min-width: 110px;
+    flex-shrink: 0;
     text-align: center;
+    white-space: nowrap;
 }
 
 .nav-button:hover {
@@ -806,23 +808,27 @@ footer .footer-copy {
 /* ==========================================================================
    MOBILE VIEW
    ========================================================================== */
+@media (max-width: 1000px) {
+    .district-nav {
+        overflow-x: auto;
+        justify-content: flex-start;
+        scrollbar-width: none;
+    }
+
+    .district-nav::-webkit-scrollbar { display: none; }
+}
+
 @media (max-width: 720px) {
     .district-nav {
         width: 94%;
         gap: 8px;
         padding: 14px 10px;
-        overflow-x: auto;
-        justify-content: flex-start;
-        scrollbar-width: none;
     }
-    .district-nav::-webkit-scrollbar { display: none; }
 
     .nav-button {
-        flex-shrink: 0;
         padding: 13px 16px;
         font-size: 14px;
         min-width: auto;
-        white-space: nowrap;
     }
 
     .district-button::after { display: none; }
