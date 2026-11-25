@@ -627,6 +627,244 @@ const districts = [
 ];
 
 // ============================================================================
+// Reviews & Feedback (persisted in localStorage)
+// ============================================================================
+const REVIEW_STORAGE_KEY = "ilolicious_reviews";
+
+let currentLightboxDistrictIndex = null;
+let currentLightboxItemIndex = null;
+let editingReviewId = null;
+
+let reviewsMap = new Map(); // key "${districtIndex}-${itemIndex}" => review[]
+
+function reviewStorageKey(districtIndex, itemIndex) {
+    return `${districtIndex}-${itemIndex}`;
+}
+
+function loadReviews() {
+    try {
+        const raw = localStorage.getItem(REVIEW_STORAGE_KEY);
+        if (raw) {
+            reviewsMap = new Map(Object.entries(JSON.parse(raw)));
+        }
+    } catch (e) {
+        console.warn("ILoLicious: failed to load reviews", e);
+        reviewsMap = new Map();
+    }
+}
+
+function saveReviews() {
+    try {
+        localStorage.setItem(
+            REVIEW_STORAGE_KEY,
+            JSON.stringify(Object.fromEntries(reviewsMap))
+        );
+    } catch (e) {
+        console.warn("ILoLicious: failed to save reviews", e);
+    }
+}
+
+function getReviews(districtIndex, itemIndex) {
+    return reviewsMap.get(reviewStorageKey(districtIndex, itemIndex)) || [];
+}
+
+function addReview(districtIndex, itemIndex, review) {
+    const key = reviewStorageKey(districtIndex, itemIndex);
+    const list = getReviews(districtIndex, itemIndex);
+    list.push(review);
+    reviewsMap.set(key, list);
+    saveReviews();
+}
+
+function updateReview(districtIndex, itemIndex, reviewId, newText) {
+    const key = reviewStorageKey(districtIndex, itemIndex);
+    const list = getReviews(districtIndex, itemIndex);
+    const review = list.find((r) => r.id === reviewId);
+    if (!review) return false;
+    review.text = newText;
+    review.updatedAt = new Date().toISOString();
+    reviewsMap.set(key, list);
+    saveReviews();
+    return true;
+}
+
+function deleteReview(districtIndex, itemIndex, reviewId) {
+    const key = reviewStorageKey(districtIndex, itemIndex);
+    const list = getReviews(districtIndex, itemIndex);
+    const filtered = list.filter((r) => r.id !== reviewId);
+    if (filtered.length === list.length) return false;
+    reviewsMap.set(key, filtered);
+    saveReviews();
+    return true;
+}
+
+function createReviewId() {
+    return Date.now().toString(36) + Math.random().toString(36).slice(2, 8);
+}
+
+function formatReviewDate(isoString) {
+    const d = new Date(isoString);
+    return (
+        d.toLocaleDateString(undefined, {
+            year: "numeric",
+            month: "short",
+            day: "numeric",
+        }) +
+        " at " +
+        d.toLocaleTimeString(undefined, { hour: "2-digit", minute: "2-digit" })
+    );
+}
+
+// Resolve which photo the lightbox opened from so reviews stay scoped to that photo.
+function findGalleryItemIndex(title, description) {
+    const districtIndices =
+        activeIndex != null ? [activeIndex] : districts.map((_, index) => index);
+    for (const districtIndex of districtIndices) {
+        const district = districts[districtIndex];
+        const itemIndex = district.gallery.findIndex((item) => {
+            if (item.title !== title) return false;
+            return (
+                item.description === description ||
+                description.endsWith(` \u2022 ${item.description}`)
+            );
+        });
+        if (itemIndex !== -1) {
+            return { districtIndex, itemIndex };
+        }
+    }
+    return null;
+}
+
+function renderReviews() {
+    const listEl = document.getElementById("reviewList");
+    if (!listEl) return;
+
+    const reviews =
+        currentLightboxDistrictIndex != null
+            ? getReviews(currentLightboxDistrictIndex, currentLightboxItemIndex)
+            : [];
+
+    if (reviews.length === 0) {
+        listEl.innerHTML = `<p class="empty-reviews">No reviews yet. Be the first to share your feedback!</p>`;
+        return;
+    }
+
+    listEl.innerHTML = reviews
+        .map((review) => {
+            const isEditing = editingReviewId === review.id;
+            const dateStr = formatReviewDate(review.createdAt);
+            const updatedStr =
+                review.updatedAt && review.updatedAt !== review.createdAt
+                    ? ` <span style="font-weight:600;">(edited)</span>`
+                    : "";
+
+            if (isEditing) {
+                return `
+                <div class="review-card review-card--editing">
+                    <div class="review-meta">
+                        <span class="review-author">${escapeHtml(review.author)}</span>
+                        <span>${escapeHtml(dateStr)}${updatedStr}</span>
+                    </div>
+                    <textarea class="review-edit-text" rows="3">${escapeHtml(
+                        review.text
+                    )}</textarea>
+                    <div class="review-actions">
+                        <button type="button" data-review-id="${review.id}" data-review-action="save" class="review-save-btn">Save</button>
+                        <button type="button" data-review-id="${review.id}" data-review-action="cancel" class="review-cancel-btn">Cancel</button>
+                    </div>
+                </div>`;
+            }
+
+            return `
+            <div class="review-card">
+                <div class="review-meta">
+                    <span class="review-author">${escapeHtml(review.author)}</span>
+                    <span>${escapeHtml(dateStr)}${updatedStr}</span>
+                </div>
+                <p class="review-text">${escapeHtml(review.text)}</p>
+                <div class="review-actions">
+                    <button type="button" data-review-id="${review.id}" data-review-action="edit" class="review-edit-btn">Edit</button>
+                    <button type="button" data-review-id="${review.id}" data-review-action="delete" class="review-delete-btn">Delete</button>
+                </div>
+            </div>`;
+        })
+        .join("");
+}
+
+function initReviews() {
+    loadReviews();
+
+    const lightbox = document.getElementById("lightbox");
+    const authorInput = document.getElementById("reviewAuthor");
+    const textInput = document.getElementById("reviewText");
+    const addBtn = document.getElementById("reviewAddBtn");
+
+    if (!lightbox || !authorInput || !textInput || !addBtn) return;
+
+    function updateAddButtonState() {
+        addBtn.disabled = !(authorInput.value.trim() && textInput.value.trim());
+    }
+
+    authorInput.addEventListener("input", updateAddButtonState);
+    textInput.addEventListener("input", updateAddButtonState);
+    updateAddButtonState();
+
+    addBtn.addEventListener("click", () => {
+        if (currentLightboxDistrictIndex === null) return;
+        const author = authorInput.value.trim();
+        const text = textInput.value.trim();
+        if (!author || !text) return;
+
+        addReview(currentLightboxDistrictIndex, currentLightboxItemIndex, {
+            id: createReviewId(),
+            author,
+            text,
+            createdAt: new Date().toISOString(),
+            updatedAt: new Date().toISOString(),
+        });
+
+        authorInput.value = "";
+        textInput.value = "";
+        updateAddButtonState();
+        renderReviews();
+    });
+
+    lightbox.addEventListener("click", (e) => {
+        const btn = e.target.closest("button[data-review-id]");
+        if (!btn || currentLightboxDistrictIndex === null) return;
+
+        const action = btn.dataset.reviewAction;
+        const reviewId = btn.dataset.reviewId;
+
+        if (action === "edit") {
+            editingReviewId = reviewId;
+            renderReviews();
+        } else if (action === "delete") {
+            if (!confirm("Delete this review?")) return;
+            deleteReview(currentLightboxDistrictIndex, currentLightboxItemIndex, reviewId);
+            if (editingReviewId === reviewId) editingReviewId = null;
+            renderReviews();
+        } else if (action === "save") {
+            const card = btn.closest(".review-card");
+            const textarea = card && card.querySelector(".review-edit-text");
+            if (textarea && textarea.value.trim()) {
+                updateReview(
+                    currentLightboxDistrictIndex,
+                    currentLightboxItemIndex,
+                    reviewId,
+                    textarea.value.trim()
+                );
+            }
+            editingReviewId = null;
+            renderReviews();
+        } else if (action === "cancel") {
+            editingReviewId = null;
+            renderReviews();
+        }
+    });
+}
+
+// ============================================================================
 // State
 // ============================================================================
 let activeIndex = null;   // null = home view
@@ -731,6 +969,13 @@ function openLightbox(src, title, description, link, locationLink) {
     } else {
         locLnk.style.display = "none";
     }
+
+    const resolvedItem = findGalleryItemIndex(title, description);
+    currentLightboxDistrictIndex = resolvedItem ? resolvedItem.districtIndex : null;
+    currentLightboxItemIndex = resolvedItem ? resolvedItem.itemIndex : null;
+    editingReviewId = null;
+    renderReviews();
+
     lightbox.classList.add("open");
     lightbox.setAttribute("aria-hidden", "false");
     document.body.style.overflow = "hidden";
@@ -747,6 +992,7 @@ function closeLightbox() {
     document.getElementById("lightboxLink").style.display = "none";
     document.getElementById("lightboxLocationLink").href = "#";
     document.getElementById("lightboxLocationLink").style.display = "none";
+    editingReviewId = null;
     document.body.style.overflow = "";
 }
 
@@ -1031,6 +1277,9 @@ function showDistrict(index) {
         block: "start",
     });
 }
+
+// Initialize reviews (localStorage + lightbox review UI)
+initReviews();
 
 // Initialize
 showHome();

@@ -85,6 +85,17 @@
             <p class="lightbox-description" id="lightboxDescription"></p>
             <a class="lightbox-link" id="lightboxLink" href="#" target="_blank" rel="noopener noreferrer" aria-label="View place details">View place</a>
             <a class="lightbox-link lightbox-link--location" id="lightboxLocationLink" href="#" target="_blank" rel="noopener noreferrer" aria-label="View location on map">View location</a>
+            <section class="reviews-section" id="lightboxReviews" aria-label="Reviews and feedback">
+                <h3 class="reviews-heading">Reviews &amp; Feedback</h3>
+                <div class="review-form">
+                    <div class="review-fields">
+                        <input type="text" id="reviewAuthor" placeholder="Your name" maxlength="60" aria-label="Your name">
+                        <textarea id="reviewText" placeholder="Write a review..." rows="3" aria-label="Your review"></textarea>
+                    </div>
+                    <button class="review-add-btn" id="reviewAddBtn" type="button">Add Review</button>
+                </div>
+                <div class="review-list" id="reviewList" aria-live="polite"></div>
+            </section>
         </div>
     </div>
 
