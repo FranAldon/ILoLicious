@@ -20,7 +20,7 @@ const districts = [
                 image: "images/PhotoGallery/Lapaz/MadgeCafe[Lapaz].jpeg",
                 title: "Madge Cafe",
                 link: "https://www.facebook.com/madgecafeatriaofficialpage",
-                locationLink:"",
+                locationLink:"https://maps.google.com/?q=Madge+Cafe+Iloilo+City",
                 description: `Madge Cafe at La Paz Public Market is the original 1940s coffee shop known for traditional
                         pre-war brewed local coffee and classic breakfast fare, while the Shops at Atria location pairs that
                         heritage coffee with a modern retail setting, cakes, and evening hours, and the Iloilo Central Market branch
@@ -192,8 +192,8 @@ const districts = [
             {
                 image: "images/PhotoGallery/Molo/theo.png",
                 title: "Baking studio by Theo's",
-                link: "",
-                locationLink:"",
+                link: "https://www.facebook.com/theosrestaurantbakery/",
+                locationLink:"https://maps.app.goo.gl/L7HnSk9cs29uMEcD7",
                 description: `Baking studio by Theo's is a modern cafe, bakery, and restaurant at
                 North Grove in Molo, Iloilo City. It offers a cozy, green space where you can
                 enjoy a wide variety of food, blending classic Filipino and Ilonggo delicacies
@@ -203,16 +203,16 @@ const districts = [
             {
                 image: "images/PhotoGallery/Molo/moloobollsz.jpg",
                 title: "Kap Ising's Pancit Molo",
-                link: "",
-                locationLink:"",
+                link: "https://pancitmolo.com/",
+                locationLink:"https://maps.app.goo.gl/sAimz2WeRrFBXj28A",
                 description: `The district's most famous spot for authentic Pancit Molo, served
                 alongside fresh lumpia, potato empanada, and frozen packs to take home`
             },
             {
                 image: "images/PhotoGallery/Molo/Panaderia de Molo.png",
                 title: "Panaderia de Molo",
-                link: "",
-                locationLink:"",
+                link: "https://panaderiademolo.com/",
+                locationLink:"https://www.google.com/maps/place//data=!4m2!3m1!1s0x33aee51335846e57:0xd0a7b8ced3323e51",
                 description: `Oldest heritage bakeries in the Visayas, continuously baking
                 traditional Spanish- influenced biscuits. They served their specialties
                 like Galleys, Roquillos, biscocho de molo, lengua de Gato and polvoron.`
@@ -221,8 +221,8 @@ const districts = [
             {
                 image: "images/PhotoGallery/Molo/mamas kitcheren products.png",
                 title: "Mama's Kitchen and Food Products",
-                link: "",
-                locationLink:"",
+                link: "https://www.facebook.com/mamaskitcheniloilo",
+                locationLink:"https://www.google.com/maps/place//data=!4m2!3m1!1s0x33aef074ce2a056f:0x4d96e9d9e2ccc0f0",
                 description: `Bakehouse originating from molo-arevalo border, famous for
                 gourmet fruit and nut pastries. Such as mango chewies, cashew crunchies,
                 Molo pastel, biscuit, tsokolate crunchies, santan spread , tablea bites
@@ -231,8 +231,8 @@ const districts = [
             {
                 image: "images/PhotoGallery/Molo/lechon liempo ramboys.jpg",
                 title: "Ramboy's",
-                link: "",
-                locationLink:"",
+                link: "https://www.facebook.com/faithcomandante",
+                locationLink:"https://maps.app.goo.gl/esJQkhQAGHRZS7wT8",
                 description: `Traditional Filipino grill and lechonan. They are known for
                 their Crispy-skinned grilled pork belly (lechon liempo) and roasted chicken
                 (lechon manok), alongside Filipino group dishes like pansit and chopsuey.`
@@ -240,8 +240,8 @@ const districts = [
             {
                 image: "images/PhotoGallery/Molo/kofi and company.png",
                 title: "Kofi & Kompany",
-                link: "",
-                locationLink:"",
+                link: "https://booky.ph/biz/kofi-kompany-molo-boulevard/menu/",
+                locationLink:"https://maps.app.goo.gl/dUgL5NX9KEniDFBy6",
                 description: `Specialty coffee, pastries, and all-day brunch.
                 They are known for Espresso drinks, frappes, thick Epicookies,
                 soufflé pancakes, pasta, and Filipino breakfast plates.`
@@ -249,25 +249,28 @@ const districts = [
             {
                 image: "images/PhotoGallery/Molo/Vegan-Batchoy-4.jpg",
                 title: "Batchoy Ilonggo Foodhaus",
-                link: "",
-                locationLink:"",
+                link: "http://www.batchoy-ilonggo-foodhaus.business/menu",
+                locationLink:"https://maps.app.goo.gl/fV6fwTm1T8j8pQLr7",
                 description: `Ilonggo comfort food and noodle soups. They are known for their
                 Signature La Paz-style batchoy (including Batchoy Overload and seafood variations)
                 as well as hearty bowls of arroz caldo and goto.`
             },
             {
-                image: "",
-                title: "",
-                link: "",
-                locationLink:"",
-                description: ``
+                image: "images/PhotoGallery/Molo/Casa[Molo].jpg",
+                title: "Casa De Daban",
+                link: "https://maps.app.goo.gl/fV6fwTm1T8j8pQLr7",
+                locationLink:"https://maps.app.goo.gl/GE6BT7o4exqBMQ5h8?g_st=ac",
+                description: `A casual restaurant serving Ilonggo-style grilled chicken, liempo, 
+                brick-oven pizza, and burgers. It offers a homey atmosphere and a combination 
+                of local and modern food.`
             },
             {
-                image: "",
-                title: "",
-                link: "",
-                locationLink:"",
-                description: ``
+                image: "images/PhotoGallery/Molo/Rella[Molo].jpg",
+                title: "Rella's House of Lumpia",
+                link: "https://www.facebook.com/share/1FDiH1JhNn/",
+                locationLink:"https://maps.app.goo.gl/ShCgeqJmmVv418mu6?g_st=ac",
+                description: `A food establishment specializing in freshly prepared lumpia and 
+                sizzling Filipino dishes. It offers savory snacks and meals for visitors.`
             },
         ]
     },
@@ -281,20 +284,20 @@ const districts = [
             {
                 image: "images/PhotoGallery/VillaArevallo/8house.jpg",
                 title: "8 Villa Beach House",
-                link: "",
-                locationLink:"",
+                link: "https://www.facebook.com/8VIllaBeach/",
+                locationLink:"https://maps.app.goo.gl/5a5sjNpDdAKJXbB57",
                 description: `8 Villa Beach House is a laid-back beachfront restaurant in Villa Arevalo
                 known for fresh seafood and classic Ilonggo dishes right on the sand. It is a revival of
                 one of Iloilo's earliest coastal restaurants from the early 1900s, offering an old-school
                 beach house vibe, sunset views, and occasional live music on weekends. Popular dishes
                 include grilled boneless bangus and seafood bilaos, and the venue is both family-friendly
-                and pet-friendly. `
+                and pet-friendly.`
             },
             {
                 image: "images/PhotoGallery/VillaArevallo/tatoys manokan and resto.png",
                 title: "Tatoy's Manokan and Seafood Restaurant",
-                link: "",
-                locationLink:"",
+                link: "https://tatoysmanokan.com/",
+                locationLink:"https://maps.app.goo.gl/CjDxdvTMHA564zc58",
                 description: `Tatoy's Manokan and Seafood Restaurant is a heritage Filipino dining establishment
                 founded in the early 1970s by Honorato "Tiyo Tatoy" Espinosa. What began as a humble three-table
                 nipa shanty operating on weekends evolved over decades into a widely recognized culinary destination
@@ -303,8 +306,8 @@ const districts = [
             {
                 image: "images/PhotoGallery/VillaArevallo/breakthrough resto.png",
                 title: "Breakthrough Restaurant",
-                link: "",
-                locationLink:"",
+                link: "https://breakthroughrestaurants.com/",
+                locationLink:"https://maps.app.goo.gl/GvzYRBgtoZKFYauP7",
                 description: `Breakthrough Restaurant is a long-standing Ilonggo seafood and Filipino dining spot in
                 Iloilo City, known for live-tank seafood and beachside dining. They served baked talaba, Diwali,
                 aligue rice, sizzling crabmeat and kilawin na tanigue.`
@@ -312,8 +315,8 @@ const districts = [
             {
                 image: "images/PhotoGallery/VillaArevallo/balay na bato.png",
                 title: "Advanceña-Camiña balay na Bato",
-                link: "",
-                locationLink:"",
+                link: "https://www.facebook.com/BalayNgaBatoIloilo/",
+                locationLink:"https://www.google.com/maps/place//data=!4m2!3m1!1s0x33aef00b322ba773:0x67f8c92592c5625d",
                 description: `1860's ancestral mansion where visitors enjoy thick tablea hot chocolate whisked
                 with a traditional wooden batirol. Their signatures are tsokolate de batirol, biscocho dunkers,
                 and Guimaras Mango Tart.`
@@ -321,8 +324,8 @@ const districts = [
             {
                 image: "images/PhotoGallery/VillaArevallo/arnels talabahan.png",
                 title: "Arnel's Talabahan",
-                link: "",
-                locationLink:"",
+                link: "https://www.facebook.com/p/Arnels-Talabahan-100057528636929/",
+                locationLink:"https://maps.app.goo.gl/JAxKUFTov2B79YXV8",
                 description: `Arnel's Talabahan is a humble, beachfront eatery loved by locals for its fresh,
                 affordable oysters and relaxing seaside views. It is a great spot to enjoy simple, home-style
                 grilled meats and seafood right by the water.
@@ -331,8 +334,8 @@ const districts = [
             {
                 image: "images/PhotoGallery/VillaArevallo/kikis caferesto.png",
                 title: "Kiki's CafeResto",
-                link: "",
-                locationLink:"",
+                link: "https://www.facebook.com/p/Kikis-Cafe-Resto-100064076135447/",
+                locationLink:"https://maps.app.goo.gl/bevgsSCBkr5f29F96",
                 description: `Kiki's CafeResto is a peaceful, nature-filled neighborhood cafe and eatery known
                 for its freshly baked pies and comforting rice meals. It is a relaxing spot to hang out with friends
                 or family over coffee, dessert, and home-style Filipino food.`
@@ -340,25 +343,29 @@ const districts = [
             {
                 image: "images/PhotoGallery/VillaArevallo/cocina de uhong.png",
                 title: "Cocina De Uhong",
-                link: "",
-                locationLink:"",
+                link: "https://www.facebook.com/profile.php?id=100070695023519",
+                locationLink:"https://maps.app.goo.gl/uwinNrohkeFnsBad7",
                 description: `Cocina de Uhong is a cozy, home-style eatery known for turning fresh, homegrown mushrooms
                 into delicious Filipino and Western comfort food. It is a great spot to enjoy healthy, meatless twists
                 on classic favorites like burgers, sisig, and even ice cream.`
             },
             {
-                image: "",
-                title: "",
-                link: "",
-                locationLink:"",
-                description: ``
+                image: "images/PhotoGallery/VillaArevallo/Screenshot 2026-11-26 140538.png",
+                title: "Trattoria D' Amore",
+                link: "https://www.facebook.com/share/1EFimUYLVW/",
+                locationLink:"https://maps.app.goo.gl/dU7mpzXkD23SF6DM8?g_st=ac",
+                description: `Trattoria D'Amore is an Italian-inspired dining restaurant that offers a selection of 
+                delicious dishes in a warm and welcoming atmosphere. It provides guests with a comfortable place to 
+                enjoy flavorful meals, quality food, and a relaxing dining experience.`
             },
             {
-                image: "",
-                title: "",
-                link: "",
-                locationLink:"",
-                description: ``
+                image: "images/PhotoGallery/VillaArevallo/Screenshot 2026-11-26 140716.pn",
+                title: "Pabusog - Eat all you can",
+                link: "https://www.facebook.com/share/1CNf6y2w5N/",
+                locationLink:"https://maps.app.goo.gl/7QN6CzCSsuVLA2vT9?g_st=ac",
+                description: `Pabusog – Eat All You Can is a buffet-style dining establishment that offers a variety 
+                of food choices for customers who enjoy unlimited dining. It provides a selection of dishes that 
+                allows guests to explore different flavors and enjoy satisfying meals in one place.`
             },
             
         ]
@@ -373,8 +380,8 @@ const districts = [
             {
                 image: "images/PhotoGallery/Mandurriao/LarsBuko[Man].jpeg",
                 title: "Lars Buko Batchoy",
-                link: "",
-                locationLink:"",
+                link: "https://www.facebook.com/share/1CcZPhzGc1/?mibextid=wwXIfr",
+                locationLink:"https://maps.app.goo.gl/edidB8Pm1gywrNwt5",
                 description: `Lars Buko Batchoy is a Filipino eatery founded in 2016 by Larry "Lars" Abanilla Lao and
                 Primrose Paredes Uy, best known for blending traditional La Paz batchoy with young coconut (buko).
                 What started as a modest, no-frills canteen gained widespread attention online and in local food media
@@ -383,8 +390,8 @@ const districts = [
             {
                 image: "images/PhotoGallery/Mandurriao/Jo’sChick[Man].jpg",
                 title: "Jo’s Chicken Inato",
-                link: "",
-                locationLink:"",
+                link: "https://www.facebook.com/JosChickenInato/",
+                locationLink:"https://maps.app.goo.gl/yymmjhPXu4oKrY2v9",
                 description: `Jo’s Chicken Inato is a casual, budget-friendly Filipino restaurant known for its tasty,
                 charcoal-grilled chicken barbecue and unlimited rice. It is a great everyday spot for families and groups
                 to enjoy a hearty meal in a relaxed setting. They also serve other classic Filipino favorites like grilled
@@ -393,8 +400,8 @@ const districts = [
             {
                 image: "images/PhotoGallery/Mandurriao/Pedb[Man].jpg",
                 title: "Pedbacs Restaurant",
-                link: "",
-                locationLink:"",
+                link: "https://www.facebook.com/pedbacs",
+                locationLink:"https://maps.app.goo.gl/czyuviq757UCYNEs6",
                 description: `Pedbacs Restaurant in Mandurriao, Iloilo City specializes in homestyle Filipino comfort food,
                 highlighted by its Kanding Sarsyado (goat meat stew) alongside classics like pork kare-kare, all-meat dinuguan,
                 callos, and all-day silog breakfasts`
@@ -402,8 +409,8 @@ const districts = [
             {
                 image: "images/PhotoGallery/Mandurriao/PUNOT[Man].jpeg",
                 title: "PUNOT",
-                link: "",
-                locationLink:"",
+                link: "https://www.facebook.com/punotrestaurant",
+                locationLink:"https://maps.app.goo.gl/PsdWEoSg5zRBxtc37",
                 description: `It is located along the Iloilo River Esplanade and specializes in elevated, contemporary
                 interpretations of traditional Western Visayas Heritage dishes.They serve signature dishes such as sizzling KBL,
                 crispy dinuguan kadyos humba fusion, smoked batwan pork ribs, crab fat pasta, seafood paella, and tuna panga inasal. `
@@ -411,8 +418,8 @@ const districts = [
             {
                 image: "images/PhotoGallery/Mandurriao/MangoTree[Man].jpeg",
                 title: "The Mango Tree Restaurant and Maridel's",
-                link: "",
-                locationLink:"",
+                link: "https://www.facebook.com/themangotreerestaurant",
+                locationLink:"https://www.google.com/maps/place//data=!4m2!3m1!1s0x33aefad2830e635d:0x98041036d4840e67",
                 description: `It showcases modern Ilonggo dining, artisanal cakes, and innovative dishes highlighting regional mangoes
                 and citrus.Signature Foods Sourced Here: Guimaras Mango Pizza, Mango Soft Serve, Calamansi Tart, Matcha Cream Horns,
                 Grilled Pork Tomahawk Inasal, and Lechon Roll.`
@@ -420,8 +427,8 @@ const districts = [
             {
                 image: "images/PhotoGallery/Mandurriao/Balay[Man].jpeg",
                 title: "Balay Esplanade",
-                link: "",
-                locationLink:"",
+                link: "https://www.facebook.com/balayesplanade",
+                locationLink:"https://maps.app.goo.gl/7BP7WP891GvyPK4z9",
                 description:`Balay Esplanade is a casual Filipino restaurant located in the Smallville Complex in Mandurriao, Iloilo City.
                 Known for its home-cooked Filipino comfort food, it offers generous, shareable portions suited for families and groups in a
                 relaxed setting right along the Iloilo River Esplanade area.`
@@ -429,8 +436,8 @@ const districts = [
             {
                 image: "images/PhotoGallery/Mandurriao/Mr.Knuc[Man].jpeg",
                 title: "Mr. Knuckles Crispy Pata",
-                link: "",
-                locationLink:"",
+                link: "https://www.facebook.com/mrknucklescrispypata",
+                locationLink:"https://maps.app.goo.gl/JPcGBRbKCSMEyxcc9",
                 description: `Mr. Knuckles Crispy Pata is a casual, family-friendly restaurant in Mandurriao, Iloilo City, specializing in
                 Filipino crispy pata alongside classic comfort dishes and soup. Plated Restaurant is a quiet, cozy Asian restaurant in Iloilo City.
                 This affordable spot is best known for big servings of tasty Asian comfort food with a touch of Ilonggo flavor. Their top dishes
@@ -438,18 +445,21 @@ const districts = [
                 classic Asian favorites with warm Ilonggo hospitality and local twists. `
             },
             {
-                image: "",
-                title: "",
-                link: "",
-                locationLink:"",
-                description: ``
+                image: "images/PhotoGallery/Mandurriao/Screenshot 2026-11-26 135742.png",
+                title: "Beng's Seafood Restaurant",
+                link: "https://www.facebook.com/share/1F5phrqzsR/",
+                locationLink:"https://maps.app.goo.gl/YmTYxCoP4a4XsuJP6?g_st=ac",
+                description: `Beng's Seafood Restaurant is a dining establishment that specializes in serving fresh seafood dishes and 
+                delicious local favorites.`
             },
             {
-                image: "",
-                title: "",
-                link: "",
-                locationLink:"",
-                description: ``
+                image: "images/PhotoGallery/Mandurriao/Screenshot 2026-11-26 135958.png",
+                title: "Bite: Bakery & Kitchen",
+                link: "https://www.facebook.com/share/1FyvvfNh5w/",
+                locationLink:"https://maps.app.goo.gl/axcTZ57emDC6JUVE8?g_st=ac",
+                description: `Bite: Bakery & Kitchen is a cozy dining establishment that combines the charm of a bakery with the comfort of a 
+                kitchen. It offers a variety of freshly baked goods, delicious meals, and satisfying treats suitable for breakfast, snacks, 
+                or casual dining.`
             },
         ]
     },
@@ -463,8 +473,8 @@ const districts = [
             {
                 image: "images/PhotoGallery/CityProper/siopao roberto.png",
                 title: "Roberto's",
-                link: "",
-                locationLink:"",
+                link: "https://robertosiloilo.com/",
+                locationLink:"https://maps.app.goo.gl/eyzq8ecrtngYbKXD9 ",
                 description: `Roberto’s is a legendary Chinese-Filipino family restaurant in Iloilo City, Philippines,
                 famous for its iconic oversized siopao. The restaurant serves a range of savory meals and snacks in a
                 casual setting. Its menu includes steamed buns, meatballs, and other comfort foods. It also offers a simple
@@ -473,8 +483,8 @@ const districts = [
             {
                 image: "images/PhotoGallery/CityProper/arozcaldo.png",
                 title: "Luna's Arroz Caldo",
-                link: "",
-                locationLink:"",
+                link: "https://www.facebook.com/p/Lunas-Arrozcaldohan-100063972368459/",
+                locationLink:"https://maps.app.goo.gl/G8qhJB8RTFDptQBMA",
                 description: `Luna's Arroz Caldo is a classic, 24-hour Ilonggo comfort food eatery in Iloilo City Proper.
                 Operating since 1967, this casual, budget-friendly spot on General Luna Street is famous for its steaming
                 bowls of native chicken arroz caldo (Filipino rice porridge) paired with soft puto (rice cake), alongside
@@ -483,24 +493,24 @@ const districts = [
             {
                 image: "images/PhotoGallery/CityProper/Betty's Ilonggo Table and Bakehouse.png",
                 title: "Betty's Ilonggo Table and Bakehouse",
-                link: "",
-                locationLink:"",
+                link: "https://www.facebook.com/bettysiloilo",
+                locationLink:"https://maps.app.goo.gl/9TMh4YH9vPPeG5uN7",
                 description: `Betty's Ilonggo Table and Bakehouse is a Filipino restaurant and bakery in Iloilo City celebrating
                 traditional Ilonggo home-style cooking like kansi, KBL, palabok, and local baked goods.`
             },
             {
                 image: "images/PhotoGallery/CityProper/master chua haus.png",
                 title: "Master Chua Food Haus",
-                link: "",
-                locationLink:"",
+                link: "https://www.facebook.com/pages/Master-Chua-Food-Haus/229944697461607",
+                locationLink:"https://maps.app.goo.gl/NDu3mTxMXPm1FZSZ8",
                 description: `Chinese- Filipino culinary heritage of downtown Iloilo, such as dumplings, beef pares, pata Tim,
                 pork hamonado, siomai, and tokwa't baboy.`
             },
             {
                 image: "images/PhotoGallery/CityProper/oka bakery.png",
                 title: "OKA Bakery",
-                link: "",
-                locationLink:"",
+                link: "https://www.facebook.com/p/OKA-Bakery-iloilo-61578982064426/",
+                locationLink:"https://maps.app.goo.gl/exCDRL8sodnm2jrr5",
                 description: `They serve different kinds of  local pastries such as Calle Real pan de sal, pan de Rosa,
                 empanada de Calle Real, toasted siopao, ibajay-style fried chicken,chicharon,bulaklak, classic halo halo,
                 leche flan, and tsokolate`
@@ -508,8 +518,8 @@ const districts = [
             {
                 image: "images/PhotoGallery/CityProper/iloggo lauya.png",
                 title: "Casa Maruja",
-                link: "",
-                locationLink:"",
+                link: "https://www.facebook.com/profile.php?id=100091540254407&sk=reels_tab",
+                locationLink:"https://maps.app.goo.gl/mWpmPWzQEJfwcoQm8",
                 description: `Casa Maruja is a charming, old-world heritage home turned into a cozy, casual restaurant.
                 It offers a warm, nostalgic atmosphere where families and visitors can enjoy authentic, home-style Ilonggo
                 dishes like their famous Lauya at affordable prices.`
@@ -517,26 +527,29 @@ const districts = [
             {
                 image: "images/PhotoGallery/CityProper/Jr. Rawit's Native Chicken Lechon.png",
                 title: "Jr. Rawit's Native Chicken Lechon",
-                link: "",
-                locationLink:"",
+                link: "https://www.facebook.com/p/Jr-Rawits-Native-Lechon-Manok-100064114115157/",
+                locationLink:"https://maps.app.goo.gl/xLPNnEZb28L9Cmw77",
                 description: `A no-frills, local eatery in Iloilo City Proper famous for its charcoal-roasted native chicken.
                 Located on Rizal Street near Iloilo Central Market, this budget-friendly spot specializes in flavorful,
                 smoky lechon manok (roasted native chicken) served fresh off the spit with steamed rice and their signature
                 spiced native vinegar.`
             },
             {
-                image: "",
-                title: "",
-                link: "",
-                locationLink:"",
-                description: ``
+                image: "images/PhotoGallery/CityProper/Screenshot 2026-11-26 134043.png",
+                title: "Mestizo",
+                link: "https://www.facebook.com/share/19tsH9oX1U/ ",
+                locationLink:"https://maps.app.goo.gl/LiaGDGV1ZzobegsH6?g_st=ac",
+                description: `Mestizo is a restaurant that offers a unique dining experience by showcasing a combination 
+                of Filipino and Spanish-inspired cuisine. It serves flavorful dishes prepared with a blend of 
+                 recipes and modern culinary influences.`
             },
             {
-                image: "",
-                title: "",
-                link: "",
-                locationLink:"",
-                description: ``
+                image: "images/PhotoGallery/CityProper/Screenshot 2026-11-26 134652.png",
+                title: "Giuseppe Iloilo",
+                link: "https://www.facebook.com/share/18ahr7Dta3/ ",
+                locationLink:"https://maps.app.goo.gl/FA5u4NBhEXjkh2g46?g_st=ac ",
+                description: `Giuseppe Iloilo is an Italian restaurant that offers a variety of authentic Italian-inspired 
+                dishes, including pasta, pizza, and other flavorful specialties. `
             },
         ]
     },
@@ -550,8 +563,8 @@ const districts = [
             {
                 image: "images/PhotoGallery/Lapuz/Muelle[Lapuz].jpeg",
                 title: "Muelle Deli and Restaurant",
-                link: "",
-                locationLink:"",
+                link: "https://www.facebook.com/muelledeliandrestaurant/",
+                locationLink:"https://maps.app.goo.gl/5ajdS2ss8akpzRW66",
                 description: `Muelle Deli and Restaurant is a cozy, upscale riverside restaurant in Lapuz, Iloilo City, known
                 for its scenic river views, live evening music, house-made sausages, steaks, and Filipino-international fusion
                 dishes. It offers both air-conditioned indoor seating and breezy outdoor dining along the Iloilo River, making
@@ -560,8 +573,8 @@ const districts = [
             {
                 image: "images/PhotoGallery/Lapuz/Sabya[Lapuz].jpeg",
                 title: "Sabya Kitchen",
-                link: "",
-                locationLink:"",
+                link: "https://www.facebook.com/profile.php?id=61564820136276",
+                locationLink:"https://maps.app.goo.gl/smAf6TrWNLqnBsRh9",
                 description: `Sabya Kitchen is a progressive Filipino restaurant along the Iloilo River in Lapuz, Iloilo City,
                 offering a cozy riverfront setting. From the team behind Jo’s Chicken Inato, it serves modern, elevated takes
                 on Ilonggo, Cebuano, and Filipino comfort food, including standout dishes like Osso Buco Kaldereta, Callos Ilonggo,
@@ -570,16 +583,16 @@ const districts = [
             {
                 image: "images/PhotoGallery/Lapuz/Sisigan[Lapuz].jpg",
                 title: "Sisigan sa Lapuz by KL Food Station and Digz Batchoy",
-                link: "",
-                locationLink:"",
+                link: "https://www.facebook.com/ByKLmoto",
+                locationLink:"https://maps.app.goo.gl/jV84jT8vzVTHfLFc7",
                 description: `Anchors to Lapuz neighborhood dining scene They served hearty sizzling plates, grilled fish and portside
                 comfort food. `
             },
             {
                 image: "images/PhotoGallery/Lapuz/3rdSt[Lapuz].jpg",
                 title: "3rd St. Coffee",
-                link: "",
-                locationLink:"",
+                link: "https://www.facebook.com/profile.php?id=61559810117517",
+                locationLink:"https://maps.app.goo.gl/pq85Xm9pdCe2UAsz6",
                 description: `A cozy, budget-friendly neighborhood cafe on Sampaguita St. (behind Assumption of Our Lady Church in
                 Bo. Obrero, Lapuz) serving iced coffees, fruit teas, sandwiches, street-food snacks like siomai and pancit canton,
                 and affordable rice meals.`
@@ -587,41 +600,43 @@ const districts = [
             {
                 image: "images/PhotoGallery/Lapuz/Dina[Lapuz].jpeg",
                 title: "Dina eatery",
-                link: "",
-                locationLink:"",
+                link: "https://www.facebook.com/profile.php?id=61591838795839",
+                locationLink:"https://maps.app.goo.gl/X6ny2pyQraZ9Ps8a7",
                 description: `Dina Eatery. A casual, cash-only local carinderia on Everlasting St., Lapuz, well-liked by residents
                 for affordable home-style Filipino dishes, especially its beef kansi, beefsteak, and pinakbet.`
             },
             {
                 image: "images/PhotoGallery/Lapuz/Bario[Lapuz].jpeg",
                 title: "Bario tapsilogan & Grill Chicken Inasal",
-                link: "",
-                locationLink:"",
+                link: "https://www.facebook.com/profile.php?id=61576420851493",
+                locationLink:"https://maps.app.goo.gl/x8rudG1ESg2JzWw88",
                 description: `Bario tapsilogan & Grill Chicken Inasal. A neighborhood grill and tapsilogan in Zone 3, Barrio Obrero,
                 Lapuz, specializing in Ilonggo-style Chicken Inasal, fried bangus, pork sisig, and hearty silog rice meals.`
             },
             {
                 image: "images/PhotoGallery/Lapuz/Yard[Lapuz].jpeg",
                 title: "Yard Cafe & Bistro",
-                link: "",
-                locationLink:"",
+                link: "https://www.facebook.com/profile.php?id=61555963571209",
+                locationLink:"https://maps.app.goo.gl/LMEFCFYjUeZQPHQz5",
                 description:`Yard Cafe & Bistro is a casual, cozy neighborhood hangout in Zone 7, Don Esteban Lapuz, Iloilo City,
                 known for affordable food, coffee, drinks, and live music or jam sessions. They Serves breakfast, brunch, lunch,
                 dinner, dessert, quick bites, and small plates, alongside coffee, cocktails, beer, and happy hour drinks.`
             },
             {
-                image: "",
-                title: "",
-                link: "",
-                locationLink:"",
-                description: ``
+                image: "images/PhotoGallery/Lapuz/Screenshot 2026-11-26 135153.png",
+                title: "FORUM Rooftop Dining and Lounge",
+                link: "https://www.facebook.com/share/1GySMevkgy/",
+                locationLink:"https://maps.app.goo.gl/sc7fyATkLyroeLgW8?g_st=ac",
+                description: `Forum Rooftop Dining and Lounge is a dining and entertainment establishment that offers a relaxing 
+                rooftop experience with a welcoming ambiance.`
             },
             {
-                image: "",
-                title: "",
-                link: "",
-                locationLink:"",
-                description: ``
+                image: "images/PhotoGallery/Lapuz/Screenshot 2026-11-26 135502.png",
+                title: "Ponsyon by breakthrough",
+                link: "https://www.facebook.com/share/1Jbe1SZxSx/",
+                locationLink:"https://maps.app.goo.gl/dHNEHu2L7q3Uo9N89?g_st=ac",
+                description: `Ponsyon by Breakthrough is an in-city Filipino and seafood restaurant serving traditional Ilonggo 
+                comfort food as a sister concept to the longtime Breakthrough Restaurants brand.`
             },
         ]
     }
@@ -1166,9 +1181,10 @@ function showHome(scrollTarget = null) {
             <h2 id="home" style="text-align:center;">Welcome to Iloilo!</h2>
             <hr>
 
-            <p style="text-align:center; font-size:19px; max-width:700px; margin:0 auto 24px;">
-                Welcome to <strong>ILoLicious</strong> — your guide to discovering the unique flavors,
-                traditions, and local specialties across the seven districts of Iloilo City.
+            <p style="text-align:center; font-size:19px; max-width:700px; margin:0 auto 30px;">
+                <img src="images/LogosPic/Logo[Horiz].png">
+                    Welcome to <strong>ILoLicious</strong> — your guide to discovering the unique flavors,
+                    traditions, and local specialties across the seven districts of Iloilo City.
             </p>
 
             ${activeCategory ? `<p style="text-align:center; color:var(--color-primary-dark); font-weight:600; margin-bottom:16px;">Showing: ${activeCategory.charAt(0).toUpperCase() + activeCategory.slice(1)}</p>` : ""}
@@ -1176,11 +1192,24 @@ function showHome(scrollTarget = null) {
             <hr>
 
             <h2 id="about" style="text-align:center;">About</h2>
+            <img src="images/BackgroundPic/1696868323084.webp"; style="display: block; margin: 0 auto; width: 50%;">
             <p>
-                ILoLicious is your guide to discovering the unique flavors, traditions, and local
-                specialties across the seven districts of Iloilo City. From the famous La Paz Batchoy
-                to the historic streets of Molo, we celebrate the rich food culture and heritage that
-                make each district special.
+                Iloilo City was recognized as the first ‘UNESCO Creative City of Gastronomy’because of its long-standing gastronomic tradition rooted in culinary heritage, with active community programs, local economic support, and sustainability goals.
+                <br>
+                <br>Indigenous cultures, Spanish, and other cultural influences influenced Ilonggo cuisine. It is also known for comforting foods and slow-cooked staples like La Paz Batchoy, Pancit Molo, and KBL, alongside sour native broths like Kansi (a sour soup) and laswa fresh vegetable soup. 
+                It is also anchored by abundant coastal seafood, agricultural lands, and much more.
+                <br>
+                <br>This vibrant food culture lives on in different districts of Iloilo through public markets and preserves passed down through elders' heirloom recipes and generational teaching.
+                <br>
+                <br>Iloilo actively supports its food industry in the belief that it is instrumental for its urban development.
+                <br>
+                <br>Since 2021, the city has organized the "Timplada" event and festivals to showcase the creativity of its gastronomic sector and local cuisine. In the collaboration of micro-, small and medium-sized businesses in the gastronomy sector to showcase their products and meet potential investors.
+                <br>
+                <br>Iloilo is also working to safeguard its culinary heritage by participating in the production of a recipe book entitled "Flavours of Iloilo", which brings together contemporary and traditional recipes unique to the city.
+                <br>
+                <br>In addition, Gastronomy anchors local livelihood and tourism across more than 300 restaurants employing around 4,600 people, while complementing festivals like Dinagyang.
+                <br>
+                <br>Therefore, this initiative shows the well-deserved recognition of “UNESCO Creative City of Gastronomy” through the continuous appreciation and commitment of Ilonggos to its local cuisine and livelihood.
             </p>
             <p>
                 Explore each district to find embedded maps, photo galleries, and signature dishes
