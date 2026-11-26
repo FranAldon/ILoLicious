@@ -350,7 +350,7 @@ const districts = [
                 on classic favorites like burgers, sisig, and even ice cream.`
             },
             {
-                image: "images/PhotoGallery/VillaArevallo/Screenshot 2026-11-26 140538.png",
+                image: "images/PhotoGallery/VillaArevallo/tratto.png",
                 title: "Trattoria D' Amore",
                 link: "https://www.facebook.com/share/1EFimUYLVW/",
                 locationLink:"https://maps.app.goo.gl/dU7mpzXkD23SF6DM8?g_st=ac",
@@ -359,7 +359,7 @@ const districts = [
                 enjoy flavorful meals, quality food, and a relaxing dining experience.`
             },
             {
-                image: "images/PhotoGallery/VillaArevallo/Screenshot 2026-11-26 140716.pn",
+                image: "images/PhotoGallery/VillaArevallo/pabusog.png",
                 title: "Pabusog - Eat all you can",
                 link: "https://www.facebook.com/share/1CNf6y2w5N/",
                 locationLink:"https://maps.app.goo.gl/7QN6CzCSsuVLA2vT9?g_st=ac",
@@ -445,7 +445,7 @@ const districts = [
                 classic Asian favorites with warm Ilonggo hospitality and local twists. `
             },
             {
-                image: "images/PhotoGallery/Mandurriao/Screenshot 2026-11-26 135742.png",
+                image: "images/PhotoGallery/Mandurriao/bengs.png",
                 title: "Beng's Seafood Restaurant",
                 link: "https://www.facebook.com/share/1F5phrqzsR/",
                 locationLink:"https://maps.app.goo.gl/YmTYxCoP4a4XsuJP6?g_st=ac",
@@ -453,7 +453,7 @@ const districts = [
                 delicious local favorites.`
             },
             {
-                image: "images/PhotoGallery/Mandurriao/Screenshot 2026-11-26 135958.png",
+                image: "images/PhotoGallery/Mandurriao/bite.png",
                 title: "Bite: Bakery & Kitchen",
                 link: "https://www.facebook.com/share/1FyvvfNh5w/",
                 locationLink:"https://maps.app.goo.gl/axcTZ57emDC6JUVE8?g_st=ac",
@@ -535,7 +535,7 @@ const districts = [
                 spiced native vinegar.`
             },
             {
-                image: "images/PhotoGallery/CityProper/Screenshot 2026-11-26 134043.png",
+                image: "images/PhotoGallery/CityProper/mestizo.png",
                 title: "Mestizo",
                 link: "https://www.facebook.com/share/19tsH9oX1U/ ",
                 locationLink:"https://maps.app.goo.gl/LiaGDGV1ZzobegsH6?g_st=ac",
@@ -544,7 +544,7 @@ const districts = [
                  recipes and modern culinary influences.`
             },
             {
-                image: "images/PhotoGallery/CityProper/Screenshot 2026-11-26 134652.png",
+                image: "images/PhotoGallery/CityProper/",
                 title: "Giuseppe Iloilo",
                 link: "https://www.facebook.com/share/18ahr7Dta3/ ",
                 locationLink:"https://maps.app.goo.gl/FA5u4NBhEXjkh2g46?g_st=ac ",
@@ -1178,12 +1178,13 @@ function showHome(scrollTarget = null) {
 
     contentEl.innerHTML = `
         <section class="details">
-            <h2 id="home" style="text-align:center;">Welcome to Iloilo!</h2>
+            <h2 id="home" style="text-align:center;">MABUHAY ILOILO!</h2>
             <hr>
 
             <p style="text-align:center; font-size:19px; max-width:700px; margin:0 auto 30px;">
-                <img src="images/LogosPic/Logo[Horiz].png">
-                    Welcome to <strong>ILoLicious</strong> — your guide to discovering the unique flavors,
+                    Welcome to <strong>ILoLicious</strong> 
+                    <img src="images/LogosPic/TransparentLogo.png" style="display: block; margin: 0 auto; width: 70%;">
+                    Your guide to discovering the unique flavors,
                     traditions, and local specialties across the seven districts of Iloilo City.
             </p>
 
@@ -1192,8 +1193,9 @@ function showHome(scrollTarget = null) {
             <hr>
 
             <h2 id="about" style="text-align:center;">About</h2>
-            <img src="images/BackgroundPic/1696868323084.webp"; style="display: block; margin: 0 auto; width: 50%;">
+            <img src="images/BackgroundPic/Molo_Church_view_(with_the_Plaza_Molo_fountain).jpg"; style="display: block; margin: 0 auto; width: 70%;">
             <p>
+                <br>
                 Iloilo City was recognized as the first ‘UNESCO Creative City of Gastronomy’because of its long-standing gastronomic tradition rooted in culinary heritage, with active community programs, local economic support, and sustainability goals.
                 <br>
                 <br>Indigenous cultures, Spanish, and other cultural influences influenced Ilonggo cuisine. It is also known for comforting foods and slow-cooked staples like La Paz Batchoy, Pancit Molo, and KBL, alongside sour native broths like Kansi (a sour soup) and laswa fresh vegetable soup. 
